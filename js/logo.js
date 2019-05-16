@@ -1,7 +1,7 @@
 function init() {
   var container = document.getElementById('logo');
-  var containerWidth = container.scrollWidth;
-  var containerHeight = container.scrollHeight;
+  var containerWidth = container.clientWidth;
+  var containerHeight = container.clientHeight;
   var scene = new THREE.Scene();
   var clock = new THREE.Clock();
 
@@ -43,7 +43,7 @@ function init() {
 
 	// renderer
 	var renderer = new THREE.WebGLRenderer( { antialias: true } );
-	renderer.setSize(container.scrollWidth, container.scrollHeight);
+	renderer.setSize(containerWidth, containerHeight);
 	renderer.shadowMap.enabled = true;
 	container.appendChild(renderer.domElement);
 

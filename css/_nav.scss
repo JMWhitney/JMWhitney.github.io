@@ -12,18 +12,12 @@ nav {
     height: 72px;
     left: 0px;
     top: 0px;
-  }
 
-  
-  i {
-    padding: 25px;
-    font-size: 32px;
-    color: $primaryText;
-    &:hover {
-      color: $primaryCool;
+    img {
+      position: absolute;
     }
   }
-  
+
   #contact {
     position: absolute;
     top: 72px;
@@ -36,29 +30,42 @@ nav {
       }
     }
   }
-  
-  .arrow-left {
-    position: absolute;
-    
-    width: 0; 
-    height: 0; 
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent; 
-    
-    border-right:10px solid $primaryBackground; 
-  }
 
-  .active{
-    
-    width: 0; 
-    height: 0; 
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent; 
-    
-    border-right:10px solid $primaryBackground; 
+  #links {
+
+    .active{
+      position: relative;
+
+      #triangle {
+        position: absolute;
+        top: 16px + 13.5px;
+        left: 82%;
+
+        width: 0; 
+        height: 0; 
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent; 
+        
+        border-right:10px solid $primaryBackground; 
+      }
+
+      i {
+        color: $primaryCool;
+      }
+    }
 
     i {
-      color: $primaryCool;
+      padding: 25px;
+      font-size: $iconSize;
+      width: $iconSize;
+      height: $iconSize;
+      color: $primaryText;
+      &:hover {
+        color: $primaryCool;
+      }
     }
+
   }
+  
+
 }

@@ -27,14 +27,8 @@ nav #logo {
   top: 0px;
 }
 
-nav i {
-  padding: 25px;
-  font-size: 32px;
-  color: #E5E7E0;
-}
-
-nav i:hover {
-  color: #21d392;
+nav #logo img {
+  position: absolute;
 }
 
 nav #contact {
@@ -52,8 +46,14 @@ nav #contact i:hover {
   color: #E5E7E0;
 }
 
-nav .arrow-left {
+nav #links .active {
+  position: relative;
+}
+
+nav #links .active #triangle {
   position: absolute;
+  top: 29.5px;
+  left: 82%;
   width: 0;
   height: 0;
   border-top: 10px solid transparent;
@@ -61,15 +61,19 @@ nav .arrow-left {
   border-right: 10px solid #1d1d23;
 }
 
-nav .active {
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-right: 10px solid #1d1d23;
+nav #links .active i {
+  color: #21d392;
 }
 
-nav .active i {
+nav #links i {
+  padding: 25px;
+  font-size: 32px;
+  width: 32px;
+  height: 32px;
+  color: #E5E7E0;
+}
+
+nav #links i:hover {
   color: #21d392;
 }
 
