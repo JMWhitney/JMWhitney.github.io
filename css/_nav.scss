@@ -1,5 +1,5 @@
 nav {
-  @include flexCenterColumn();
+  @include flexCenter(column);
   height: 100vh;
   background: $secondaryBackground;
   width: 72px;
@@ -14,9 +14,51 @@ nav {
     top: 0px;
   }
 
+  
   i {
     padding: 25px;
     font-size: 32px;
     color: $primaryText;
+    &:hover {
+      color: $primaryCool;
+    }
+  }
+  
+  #contact {
+    position: absolute;
+    top: 72px;
+    i {
+      padding: 12px 25px;
+      font-size: 22px;
+      color: $secondaryText;
+      &:hover {
+        color: $primaryText;
+      }
+    }
+  }
+  
+  .arrow-left {
+    position: absolute;
+    
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    
+    border-right:10px solid $primaryBackground; 
+  }
+
+  .active{
+    
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    
+    border-right:10px solid $primaryBackground; 
+
+    i {
+      color: $primaryCool;
+    }
   }
 }

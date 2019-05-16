@@ -33,6 +33,46 @@ nav i {
   color: #E5E7E0;
 }
 
+nav i:hover {
+  color: #21d392;
+}
+
+nav #contact {
+  position: absolute;
+  top: 72px;
+}
+
+nav #contact i {
+  padding: 12px 25px;
+  font-size: 22px;
+  color: #6e6e6b;
+}
+
+nav #contact i:hover {
+  color: #E5E7E0;
+}
+
+nav .arrow-left {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #1d1d23;
+}
+
+nav .active {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #1d1d23;
+}
+
+nav .active i {
+  color: #21d392;
+}
+
 body {
   margin: 0;
   padding: 0;
