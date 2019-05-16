@@ -1,1 +1,48 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background: #131317;
+  width: 72px;
+  position: absolute;
+}
+
+nav #logo {
+  background: #09090b;
+  position: absolute;
+  width: 100%;
+  height: 72px;
+  left: 0px;
+  top: 0px;
+}
+
+nav i {
+  padding: 25px;
+  font-size: 32px;
+  color: #E5E7E0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body #background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: #1d1d23;
+}
+/*# sourceMappingURL=index.css.map */
