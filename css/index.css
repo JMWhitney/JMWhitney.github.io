@@ -18,6 +18,28 @@ nav {
   position: absolute;
 }
 
+@media screen and (max-width: 420px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
+    height: 72px;
+    flex-direction: row;
+    background: red;
+  }
+}
+
 nav #logo {
   background: #09090b;
   position: absolute;
@@ -75,6 +97,51 @@ nav #links i {
 
 nav #links i:hover {
   color: #21d392;
+}
+
+#page {
+  position: absolute;
+  background: rgba(111, 111, 111, 0);
+  padding: 0px;
+  top: 10vh;
+  left: 10vw;
+  height: 50vh;
+  width: 45vw;
+}
+
+#page h1 {
+  font-family: 'Source Code Pro', monospace;
+  font-size: calc(4vh + 4vw);
+  font-weight: bolder;
+  letter-spacing: 10px;
+  margin: 0;
+  position: relative;
+}
+
+#page h1#stroke {
+  position: absolute;
+  left: calc(3vh + 3vw);
+  color: #E5E7E0;
+}
+
+#page h1#highlightHot {
+  top: 4px;
+  left: 4px;
+  position: absolute;
+  color: #ce2522;
+}
+
+#page h1#highlightCool {
+  position: absolute;
+  color: #21d392;
+}
+
+#page h2 {
+  position: absolute;
+  bottom: 0px;
+  margin: 0;
+  font-size: 32px;
+  color: #E5E7E0;
 }
 
 body {

@@ -4,6 +4,15 @@ nav {
   background: $secondaryBackground;
   width: 72px;
   position: absolute;
+  @media screen and (max-width: $break-small) {
+    @include flexCenter(row);
+    width: 100vw;
+    height: 72px;
+    flex-direction: row;
+    background: red;
+    
+  }
+
 
   #logo {
     background: $tertiaryBackground;
@@ -64,8 +73,5 @@ nav {
         color: $primaryCool;
       }
     }
-
   }
-  
-
 }
