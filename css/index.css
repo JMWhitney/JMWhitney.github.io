@@ -18,7 +18,7 @@ nav {
   position: absolute;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 500px) {
   nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -35,15 +35,13 @@ nav {
             align-items: center;
     width: 100vw;
     height: 72px;
-    flex-direction: row;
-    background: red;
   }
 }
 
 nav #logo {
   background: #09090b;
   position: absolute;
-  width: 100%;
+  width: 72px;
   height: 72px;
   left: 0px;
   top: 0px;
@@ -56,6 +54,28 @@ nav #logo img {
 nav #contact {
   position: absolute;
   top: 72px;
+}
+
+@media screen and (max-width: 500px) {
+  nav #contact {
+    top: 0px;
+    left: 72px;
+    height: 72px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    align-items: center;
+  }
 }
 
 nav #contact i {
@@ -99,49 +119,58 @@ nav #links i:hover {
   color: #21d392;
 }
 
-#page {
+@media screen and (max-width: 500px) {
+  nav #links {
+    display: none;
+  }
+}
+
+nav #menu {
+  display: none;
+  position: absolute;
+}
+
+@media screen and (max-width: 500px) {
+  nav #menu {
+    display: block;
+    right: 0;
+    padding: 10px;
+  }
+  nav #menu span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    position: relative;
+    margin-bottom: 5px;
+    background: #21d392;
+    border-radius: 3px;
+  }
+}
+
+#title {
   position: absolute;
   background: rgba(111, 111, 111, 0);
-  padding: 0px;
-  top: 10vh;
-  left: 10vw;
-  height: 50vh;
+  top: 100px;
+  left: 100px;
+  height: 275px;
   width: 45vw;
 }
 
-#page h1 {
+#title h1 {
   font-family: 'Source Code Pro', monospace;
   font-size: calc(4vh + 4vw);
   font-weight: bolder;
-  letter-spacing: 10px;
+  letter-spacing: 1px;
   margin: 0;
   position: relative;
-}
-
-#page h1#stroke {
-  position: absolute;
-  left: calc(3vh + 3vw);
   color: #E5E7E0;
 }
 
-#page h1#highlightHot {
-  top: 4px;
-  left: 4px;
-  position: absolute;
-  color: #ce2522;
-}
-
-#page h1#highlightCool {
-  position: absolute;
-  color: #21d392;
-}
-
-#page h2 {
-  position: absolute;
-  bottom: 0px;
+#title h2 {
   margin: 0;
-  font-size: 32px;
-  color: #E5E7E0;
+  font-size: calc(1.5vh + 1.5vw);
+  font-family: 'Roboto', sans-serif;
+  color: #21d392;
 }
 
 body {

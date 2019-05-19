@@ -2,23 +2,19 @@ nav {
   @include flexCenter(column);
   height: 100vh;
   background: $secondaryBackground;
-  width: 72px;
+  width: $logoSize;
   position: absolute;
   @media screen and (max-width: $break-small) {
     @include flexCenter(row);
     width: 100vw;
-    height: 72px;
-    flex-direction: row;
-    background: red;
-    
+    height: $logoSize;
   }
-
 
   #logo {
     background: $tertiaryBackground;
     position: absolute;
-    width: 100%;
-    height: 72px;
+    width: $logoSize;
+    height: $logoSize;
     left: 0px;
     top: 0px;
 
@@ -26,10 +22,19 @@ nav {
       position: absolute;
     }
   }
-
+  
   #contact {
     position: absolute;
-    top: 72px;
+    top: $logoSize;
+
+    @media screen and(max-width: $break-small) {
+      top: 0px;
+      left: $logoSize;
+      height: $logoSize;
+      @include flexCenter(row);
+      align-items: center;
+    }
+
     i {
       padding: 12px 25px;
       font-size: 22px;
@@ -39,7 +44,7 @@ nav {
       }
     }
   }
-
+  
   #links {
 
     .active{
@@ -71,6 +76,30 @@ nav {
       color: $primaryText;
       &:hover {
         color: $primaryCool;
+      }
+    }
+    @media screen and (max-width: $break-small){
+      display: none;
+    }
+  }
+
+  #menu {
+    display: none;
+    position: absolute;
+
+    @media screen and (max-width: $break-small){
+      display: block;
+      right: 0;
+      padding: 10px;
+      
+      span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        position: relative;
+        margin-bottom: 5px;
+        background: $primaryCool;
+        border-radius: 3px;
       }
     }
   }

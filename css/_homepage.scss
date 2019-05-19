@@ -1,45 +1,25 @@
-#page {
+#title {
   position: absolute;
   background: rgba(111, 111, 111, 0.0);
-  padding: 0px;
-  top: 10vh;
-  left: 10vw;
-
-  height: 50vh;
+  top: 100px;
+  left: 100px;
+  height: 275px;
   width: 45vw;
 
   h1 {
     font-family: 'Source Code Pro', monospace;
     font-size: calc(4vh + 4vw);
     font-weight: bolder;
-    letter-spacing: 10px;
+    letter-spacing: 1px;
     margin: 0;
     position: relative;
-    &#stroke {
-      position: absolute;
-      left: calc(3vh + 3vw);
-      color: $primaryText;
-    }
-
-    &#highlightHot {
-      top: 4px;
-      left: 4px;
-
-      position: absolute;
-      color: $primaryHot;
-    }
-
-    &#highlightCool {
-      position: absolute;
-      color: $primaryCool;
-    }
+    color: $primaryText;
   }
 
   h2 {
-    position: absolute;
-    bottom: 0px;
     margin: 0;
-    font-size: 32px;
-    color: $primaryText;
+    font-size: calc(1.5vh + 1.5vw);
+    font-family: 'Roboto', sans-serif;
+    color: $primaryCool;
   }
 }

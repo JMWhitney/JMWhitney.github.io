@@ -16,7 +16,6 @@ function initBackground() {
     return a * Math.pow(Math.E, -1.0*((x-b)*(x-b))/(2*(c*c)));
   }
   
-  
   //Make sure canvas is resized properly
   function resize() {
     canvas.height = container.clientHeight;
@@ -30,6 +29,7 @@ function initBackground() {
     running = true;
     //vars
     var hypotenuse = Math.round(Math.sqrt(container.clientWidth * container.clientWidth + container.clientHeight * container.clientHeight));
+    console.log(hypotenuse);
     var color = "#1d1d23";
     var boxWidth = 100;
     var boxHeight = window.innerHeight * 3;
@@ -39,7 +39,7 @@ function initBackground() {
     var maxValue = 4;
 
     var frameLoop = setInterval(() => {
-      for(let i = 0; i <= numBoxes; i++) {
+      for(let i = -4; i < numBoxes; i++) {
         let r = 26 + guassianDistribution(i, maxValue, n , rms);
         let g = 30 + guassianDistribution(i, maxValue, n , rms);
         let b = 40 + guassianDistribution(i, maxValue, n , rms);
@@ -60,6 +60,6 @@ function initBackground() {
   initAnimation();
 
   window.addEventListener('resize', resize);
-  // window.addEventListener('resize', initAnimation);
 }
+
 initBackground();
