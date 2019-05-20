@@ -1,8 +1,8 @@
 #title {
   position: absolute;
-  background: rgba(111, 111, 111, 0.0);
-  top: 100px;
-  left: 100px;
+  background: rgba(0, 0, 0, 0.0);
+  top: 25%;
+  left: 33%;
   height: 275px;
   width: 45vw;
 
@@ -14,6 +14,7 @@
     margin: 0;
     position: relative;
     color: $primaryText;
+    stroke: 1px $primaryHot;
   }
 
   h2 {

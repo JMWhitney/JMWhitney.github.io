@@ -40,9 +40,9 @@ function initBackground() {
 
     var frameLoop = setInterval(() => {
       for(let i = -4; i < numBoxes; i++) {
-        let r = 26 + guassianDistribution(i, maxValue, n , rms);
-        let g = 30 + guassianDistribution(i, maxValue, n , rms);
-        let b = 40 + guassianDistribution(i, maxValue, n , rms);
+        let r = 10 + guassianDistribution(i, maxValue, n , rms);
+        let g = 43 + guassianDistribution(i, maxValue, n , rms);
+        let b = 90 + guassianDistribution(i, maxValue, n , rms);
         ctx.fillStyle = 'rgb(' + r + ',' + g + ',' + b + ')';
         ctx.fillRect(( i * boxWidth ) - canvas.width/2, 0 , boxWidth, boxHeight );
       }
