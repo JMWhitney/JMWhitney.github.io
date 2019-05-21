@@ -4,7 +4,7 @@ nav {
   background: $secondaryBackground;
   width: $logoSize;
   position: absolute;
-  @media screen and (max-width: $break-small) {
+  @media screen and (max-width: $break-small), (max-height: $break-small) {
     @include flexCenter(row);
     width: 100vw;
     height: $logoSize;
@@ -27,7 +27,7 @@ nav {
     position: absolute;
     top: $logoSize;
 
-    @media screen and(max-width: $break-small) {
+    @media screen and (max-width: $break-small), (max-height: $break-small) {
       top: 0px;
       left: $logoSize;
       height: $logoSize;
@@ -78,7 +78,7 @@ nav {
         color: $primaryCool;
       }
     }
-    @media screen and (max-width: $break-small){
+    @media screen and (max-width: $break-small), (max-height: $break-small){
       display: none;
     }
   }
@@ -87,7 +87,7 @@ nav {
     display: none;
     position: absolute;
 
-    @media screen and (max-width: $break-small){
+    @media screen and (max-width: $break-small), (max-height: $break-small){
       display: block;
       right: 0;
       padding: 10px;

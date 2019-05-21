@@ -1,20 +1,19 @@
 #title {
   position: absolute;
   background: rgba(0, 0, 0, 0.0);
-  top: 25%;
-  left: 33%;
-  height: 275px;
-  width: 45vw;
+  top: 10%;
+  left: 24%;
+  width: 60vw;
 
   h1 {
     font-family: 'Source Code Pro', monospace;
     font-size: calc(4vh + 4vw);
-    font-weight: bolder;
+    font-weight: bold;
+    text-transform: uppercase;
     letter-spacing: 1px;
     margin: 0;
     position: relative;
     color: $primaryText;
-    stroke: 1px $primaryHot;
   }
 
   h2 {

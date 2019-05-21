@@ -1,3 +1,25 @@
+@-webkit-keyframes moveLine {
+  0% {
+    -webkit-transform: translateY(-10vh);
+            transform: translateY(-10vh);
+  }
+  100% {
+    -webkit-transform: translateY(10vh);
+            transform: translateY(10vh);
+  }
+}
+
+@keyframes moveLine {
+  0% {
+    -webkit-transform: translateY(-10vh);
+            transform: translateY(-10vh);
+  }
+  100% {
+    -webkit-transform: translateY(10vh);
+            transform: translateY(10vh);
+  }
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,7 +40,7 @@ nav {
   position: absolute;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px), (max-height: 500px) {
   nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -56,7 +78,7 @@ nav #contact {
   top: 72px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px), (max-height: 500px) {
   nav #contact {
     top: 0px;
     left: 72px;
@@ -119,7 +141,7 @@ nav #links i:hover {
   color: #21d392;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px), (max-height: 500px) {
   nav #links {
     display: none;
   }
@@ -130,7 +152,7 @@ nav #menu {
   position: absolute;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px), (max-height: 500px) {
   nav #menu {
     display: block;
     right: 0;
@@ -150,21 +172,20 @@ nav #menu {
 #title {
   position: absolute;
   background: rgba(0, 0, 0, 0);
-  top: 25%;
-  left: 33%;
-  height: 275px;
-  width: 45vw;
+  top: 10%;
+  left: 24%;
+  width: 60vw;
 }
 
 #title h1 {
   font-family: 'Source Code Pro', monospace;
   font-size: calc(4vh + 4vw);
-  font-weight: bolder;
+  font-weight: bold;
+  text-transform: uppercase;
   letter-spacing: 1px;
   margin: 0;
   position: relative;
   color: #E5E7E0;
-  stroke: 1px #ce2522;
 }
 
 #title h2 {
@@ -184,57 +205,246 @@ body #background {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background: #0a2b5a;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  pointer-events: none;
+  background: #041122;
 }
 
-body #background:before, body #background:after {
-  content: "";
+body #background .grid-wrapper {
   position: absolute;
-  top: 0;
-  left: 0;
+  width: 100%;
   height: 100%;
-  width: 300%;
-  background-size: contain;
-  background-position: center;
-  background-repeat: repeat-x;
+  left: 0;
+  bottom: 0px;
+  -webkit-perspective: 200px;
+          perspective: 200px;
 }
 
-body #background:before {
-  background-image: url("https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-1.png");
-  -webkit-animation: drift 60s linear 0s infinite;
-          animation: drift 60s linear 0s infinite;
+body #background .grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: -50px;
+  -webkit-transform: rotateX(45deg);
+          transform: rotateX(45deg);
 }
 
-body #background:after {
-  background-image: url("https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-2.png");
-  -webkit-animation: drift 25s linear 0s infinite;
-          animation: drift 25s linear 0s infinite;
+body #background .line {
+  position: absolute;
+  background: rgba(87, 193, 232, 0.35);
+  -webkit-box-shadow: 0px 0px 5px #21d392;
+          box-shadow: 0px 0px 5px #21d392;
 }
 
-@-webkit-keyframes drift {
-  from {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+body #background .vertical .line {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(87, 193, 232, 0.35)));
+  background: linear-gradient(top, rgba(255, 255, 255, 0), rgba(87, 193, 232, 0.35));
+}
+
+body #background .vertical .line:nth-child(1) {
+  left: 10%;
+}
+
+body #background .vertical .line:nth-child(2) {
+  left: 20%;
+}
+
+body #background .vertical .line:nth-child(3) {
+  left: 30%;
+}
+
+body #background .vertical .line:nth-child(4) {
+  left: 40%;
+}
+
+body #background .vertical .line:nth-child(5) {
+  left: 50%;
+}
+
+body #background .vertical .line:nth-child(6) {
+  left: 60%;
+}
+
+body #background .vertical .line:nth-child(7) {
+  left: 70%;
+}
+
+body #background .vertical .line:nth-child(8) {
+  left: 80%;
+}
+
+body #background .vertical .line:nth-child(9) {
+  left: 90%;
+}
+
+body #background .vertical .line:nth-child(10) {
+  left: 100%;
+}
+
+body #background .horizontal .line {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  z-index: 2;
+}
+
+body #background .horizontal .line:nth-child(1) {
+  top: 0%;
+  opacity: 0.1;
+  -webkit-animation: moveLine 3s linear infinite;
+          animation: moveLine 3s linear infinite;
+}
+
+body #background .horizontal .line:nth-child(2) {
+  top: 10%;
+  opacity: 0.2;
+  -webkit-animation: moveLine 3s linear infinite;
+          animation: moveLine 3s linear infinite;
+}
+
+body #background .horizontal .line:nth-child(3) {
+  top: 20%;
+  opacity: 0.3;
+  -webkit-animation: moveLine 3s linear infinite;
+          animation: moveLine 3s linear infinite;
+}
+
+body #background .horizontal .line:nth-child(4) {
+  top: 30%;
+  opacity: 0.4;
+  -webkit-animation: moveLine 3s linear infinite;
+          animation: moveLine 3s linear infinite;
+}
+
+body #background .horizontal .line:nth-child(5) {
+  top: 40%;
+  opacity: 0.5;
+  -webkit-animation: moveLine 3s linear infinite;
+          animation: moveLine 3s linear infinite;
+}
+
+body #background .horizontal .line:nth-child(6) {
+  top: 50%;
+  opacity: 0.6;
+  -webkit-animation: moveLine 3s linear infinite;
+          animation: moveLine 3s linear infinite;
+}
+
+body #background .horizontal .line:nth-child(7) {
+  top: 60%;
+  opacity: 0.7;
+  -webkit-animation: moveLine 3s linear infinite;
+          animation: moveLine 3s linear infinite;
+}
+
+body #background .horizontal .line:nth-child(8) {
+  top: 70%;
+  opacity: 0.8;
+  -webkit-animation: moveLine 3s linear infinite;
+          animation: moveLine 3s linear infinite;
+}
+
+body #background .horizontal .line:nth-child(9) {
+  top: 80%;
+  opacity: 0.9;
+  -webkit-animation: moveLine 3s linear infinite;
+          animation: moveLine 3s linear infinite;
+}
+
+body #background .horizontal .line:nth-child(10) {
+  top: 90%;
+  opacity: 1;
+  -webkit-animation: moveLine 3s linear infinite;
+          animation: moveLine 3s linear infinite;
+}
+
+body #background .horizontal .line:nth-child(11) {
+  top: 100%;
+  opacity: 1;
+  -webkit-animation: moveLine 3s linear infinite;
+          animation: moveLine 3s linear infinite;
+}
+
+body #background .dot {
+  position: absolute;
+  background: #57C1E8;
+  width: 5px;
+  height: 5px;
+  top: 100%;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 3px #fff;
+          box-shadow: 0 0 3px #fff;
+  -webkit-backface-visibility: hidden;
+}
+
+body #background .dot:nth-child(1) {
+  left: 10%;
+  -webkit-animation: moveDot 5s infinite;
+          animation: moveDot 5s infinite;
+}
+
+body #background .dot:nth-child(2) {
+  left: 20%;
+  -webkit-animation: moveDot 20s infinite;
+          animation: moveDot 20s infinite;
+}
+
+body #background .dot:nth-child(3) {
+  left: 30%;
+  -webkit-animation: moveDot 15s infinite;
+          animation: moveDot 15s infinite;
+}
+
+body #background .dot:nth-child(4) {
+  left: 50%;
+  -webkit-animation: moveDot 30s infinite;
+          animation: moveDot 30s infinite;
+}
+
+body #background .dot:nth-child(5) {
+  left: 60%;
+  -webkit-animation: moveDot 12s infinite;
+          animation: moveDot 12s infinite;
+}
+
+body #background .dot:nth-child(6) {
+  left: 80%;
+  -webkit-animation: moveDot 6s infinite;
+          animation: moveDot 6s infinite;
+}
+
+body #background .dot:nth-child(7) {
+  left: 90%;
+  -webkit-animation: moveDot 8s infinite;
+          animation: moveDot 8s infinite;
+}
+
+@-webkit-keyframes moveDot {
+  0% {
+    top: 100%;
+    opacity: 1;
   }
-  to {
-    -webkit-transform: translate3d(-200vw, 0, 0);
-            transform: translate3d(-200vw, 0, 0);
+  100% {
+    top: 0%;
+    opacity: 0;
   }
 }
 
-@keyframes drift {
-  from {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+@keyframes moveDot {
+  0% {
+    top: 100%;
+    opacity: 1;
   }
-  to {
-    -webkit-transform: translate3d(-200vw, 0, 0);
-            transform: translate3d(-200vw, 0, 0);
+  100% {
+    top: 0%;
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=index.css.map */

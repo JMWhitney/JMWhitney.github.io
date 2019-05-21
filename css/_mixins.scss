@@ -4,3 +4,14 @@
   justify-content: center;
   align-items: center;
 }
+
+@keyframes moveLine {
+  0% { transform: translateY(-10vh); }
+  100% { transform: translateY(10vh); }
+}
+
+@mixin animateLine ($pos, $opacity) {
+  top: $pos;
+  opacity: $opacity;
+  animation: moveLine 3s linear infinite
+}

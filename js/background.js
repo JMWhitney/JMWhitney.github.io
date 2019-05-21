@@ -57,7 +57,7 @@ function initBackground() {
     setTimeout(initAnimation, 6000);
   }
 
-  initAnimation();
+  // initAnimation();
 
   window.addEventListener('resize', resize);
 }
