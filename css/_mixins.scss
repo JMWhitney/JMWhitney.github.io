@@ -5,6 +5,30 @@
   align-items: center;
 }
 
+@mixin textOutline($h1border, $h1bordercolour) {
+	text-shadow: $h1border 0px $h1bordercolour,
+	           	-$h1border 0px $h1bordercolour,
+	           	 0px $h1border $h1bordercolour,
+	           	0px -$h1border $h1bordercolour,
+	       $h1border $h1border $h1bordercolour,
+	     -$h1border -$h1border $h1bordercolour,
+	      $h1border -$h1border $h1bordercolour,
+	      -$h1border $h1border $h1bordercolour;
+}
+
+@mixin neonText($color:#ee91ae, $width:1px, $outline:#fff) {
+	color: $color;
+	text-shadow: $width $width $outline,
+						 -$width -$width $outline,
+							-$width $width $outline,
+						  $width -$width $outline,
+								  $width 0px $outline,
+							   -$width 0px $outline,
+							   0px -$width $outline,
+								  0px $width $outline,
+							    0px 0px 12px $color;
+}
+
 @keyframes moveLine {
   0% { transform: translateY(-10vh); }
   100% { transform: translateY(10vh); }

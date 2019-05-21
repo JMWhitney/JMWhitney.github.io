@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Damion|Work+Sans&display=swap");
 @-webkit-keyframes moveLine {
   0% {
     -webkit-transform: translateY(-10vh);
@@ -8,7 +9,6 @@
             transform: translateY(10vh);
   }
 }
-
 @keyframes moveLine {
   0% {
     -webkit-transform: translateY(-10vh);
@@ -57,6 +57,7 @@ nav {
             align-items: center;
     width: 100vw;
     height: 72px;
+    background: rgba(0, 0, 0, 0);
   }
 }
 
@@ -172,27 +173,51 @@ nav #menu {
 #title {
   position: absolute;
   background: rgba(0, 0, 0, 0);
-  top: 10%;
+  top: 19%;
   left: 24%;
   width: 60vw;
 }
 
 #title h1 {
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Work Sans', sans-serif;
   font-size: calc(4vh + 4vw);
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 1px;
   margin: 0;
   position: relative;
-  color: #E5E7E0;
+  -webkit-transform: scaleX(1.25);
+          transform: scaleX(1.25);
+}
+
+#title h1 span {
+  color: transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(22%, #113e87), color-stop(50%, #10cccc), color-stop(51%, #000000), color-stop(78%, #e21ddc), color-stop(78%, #e21ddc), to(#ffffff));
+  background: linear-gradient(#000000 0%, #113e87 22%, #10cccc 50%, #000000 51%, #e21ddc 78%, #e21ddc 78%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#title h1 span:before {
+  content: attr(text);
+}
+
+#title h1 span:after {
+  content: attr(text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
 }
 
 #title h2 {
-  margin: 0;
+  margin-right: 0;
+  margin-top: -1vh;
+  float: right;
   font-size: calc(1.5vh + 1.5vw);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Damion', cursive;
   color: #21d392;
+  -webkit-transform: skewY(-10deg);
+          transform: skewY(-10deg);
 }
 
 body {
@@ -205,7 +230,11 @@ body #background {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background: #041122;
+  background-image: url(https://ih0.redbubble.net/image.416023529.7213/flat,550x550,075,f.u2.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #0c102d;
+  background-size: calc(20vh + 20vw);
 }
 
 body #background .grid-wrapper {
@@ -221,14 +250,16 @@ body #background .grid-wrapper {
 body #background .grid {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -50%;
   right: 0;
   bottom: 0;
-  width: 100%;
+  width: 200%;
   height: 100%;
   margin-top: -50px;
   -webkit-transform: rotateX(45deg);
           transform: rotateX(45deg);
+  background: #140214;
+  background: radial-gradient(circle closest-side at 50% 37%, #961371, #140214);
 }
 
 body #background .line {
@@ -243,8 +274,8 @@ body #background .vertical .line {
   left: 0;
   bottom: 0;
   width: 5px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(87, 193, 232, 0.35)));
-  background: linear-gradient(top, rgba(255, 255, 255, 0), rgba(87, 193, 232, 0.35));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#57c1e8));
+  background: linear-gradient(top, rgba(255, 255, 255, 0), #57c1e8);
 }
 
 body #background .vertical .line:nth-child(1) {
@@ -293,6 +324,7 @@ body #background .horizontal .line {
   right: 0;
   height: 5px;
   z-index: 2;
+  background: #57c1e8;
 }
 
 body #background .horizontal .line:nth-child(1) {
