@@ -191,29 +191,28 @@ nav #menu {
 
 #title h1 span {
   color: transparent;
-  background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(22%, #113e87), color-stop(50%, #10cccc), color-stop(51%, #000000), color-stop(78%, #e21ddc), color-stop(78%, #e21ddc), to(#ffffff));
-  background: linear-gradient(#000000 0%, #113e87 22%, #10cccc 50%, #000000 51%, #e21ddc 78%, #e21ddc 78%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(22%, #113e87), color-stop(50%, #10cccc), color-stop(51%, #000000), color-stop(78%, #e21ddc), to(#ffffff));
+  background: linear-gradient(#000000 0%, #113e87 22%, #10cccc 50%, #000000 51%, #e21ddc 78%, #ffffff 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  z-index: 1;
 }
 
-#title h1 span:before {
-  content: attr(text);
-}
-
-#title h1 span:after {
-  content: attr(text);
+#title h1 span#outline {
+  -webkit-text-stroke: 9px #757575;
+  text-shadow: 10px  10px 12px black, 10px -10px 12px black, -10px  10px 12px black, -10px  -10px 12px black;
   position: absolute;
-  top: 0;
   left: 0;
-  opacity: 0.2;
+  top: 0;
+  z-index: -1;
 }
 
 #title h2 {
   margin-right: 0;
   margin-top: -1vh;
   float: right;
-  font-size: calc(1.5vh + 1.5vw);
+  font-size: calc(2.2vh + 2.2vw);
   font-family: 'Damion', cursive;
   color: #21d392;
   -webkit-transform: skewY(-10deg);
@@ -243,8 +242,8 @@ body #background .grid-wrapper {
   height: 100%;
   left: 0;
   bottom: 0px;
-  -webkit-perspective: 200px;
-          perspective: 200px;
+  -webkit-perspective: calc(7.5vw + 7.5vh);
+          perspective: calc(7.5vw + 7.5vh);
 }
 
 body #background .grid {

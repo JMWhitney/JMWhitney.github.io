@@ -7,7 +7,7 @@ function init() {
 
 	// initialize objects
 	var Light1 = getPointLight(2.5, 0x25BD84);
-	var Light2 = getPointLight(2.5, 0xD03431);
+	var Light2 = getPointLight(2.5, 0x961371);
 
 	var objectMaterial = getMaterial('lambert', 'rgb(255, 255, 255)');
 	var solid = getIso(objectMaterial, 1);

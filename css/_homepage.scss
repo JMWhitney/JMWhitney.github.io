@@ -10,25 +10,29 @@
     font-size: calc(4vh + 4vw);
     font-weight: bold;
     text-transform: uppercase;
-    // -webkit-text-stroke: 2px #555;
     margin: 0;
     position: relative;
     transform: scaleX(1.25);
 
     span {
       color: transparent;
-			background: linear-gradient(#000000 0%,#113e87 22%,#10cccc 50%,#000000 51%,#e21ddc 78%,#e21ddc 78%,#ffffff 100%);
-			-webkit-background-clip: text;
+      background: linear-gradient(#000000 0%,#113e87 22%,#10cccc 50%,#000000 51%,#e21ddc 78%,#ffffff 100%);
+      // background: linear-gradient(#000000 0%,#113e87 22%,#10cccc 50%,#113e87 78%,#10cccc 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
-			&:before {
-        content: attr(text);
-			}
-			&:after {
-        content: attr(text);
-				position: absolute;
-				top: 0;
+      z-index: 1;
+
+      &#outline {
+        -webkit-text-stroke: 9px rgb(117, 117, 117);
+        text-shadow:  10px  10px 12px black,
+                      10px -10px 12px black,
+                      -10px  10px 12px black,
+                      -10px  -10px 12px black;
+        position: absolute;
         left: 0;
-        opacity: 0.2;
+        top: 0;
+        z-index: -1;
       }
     }
 
@@ -39,7 +43,7 @@
     margin-right: 0;
     margin-top: -1vh;
     float: right;
-    font-size: calc(1.5vh + 1.5vw);
+    font-size: calc(2.2vh + 2.2vw);
     font-family: 'Damion', cursive;
     // text-shadow: -2px -2px 1px $primaryHot;
     color: $primaryCool;
