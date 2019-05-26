@@ -16,8 +16,9 @@
 
     span {
       color: transparent;
-      background: linear-gradient(#000000 0%,#113e87 22%,#10cccc 50%,#000000 51%,#e21ddc 78%,#ffffff 100%);
+      // background: linear-gradient(#000000 0%,#113e87 22%,#10cccc 50%,#000000 51%,#e21ddc 78%,#ffffff 100%);
       // background: linear-gradient(#000000 0%,#113e87 22%,#10cccc 50%,#113e87 78%,#10cccc 100%);
+      background: linear-gradient(#fff 0%,#fff 22%,#8a8a8a 50%,rgb(56, 56, 56) 51%,#fff 78%,#fff 100%);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;

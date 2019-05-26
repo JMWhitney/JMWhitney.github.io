@@ -1,19 +1,41 @@
 {
-  "name": "portfoliodesign3",
-  "version": "1.0.0",
-  "description": "The third iteration of my portfolio website design",
-  "main": "index.js",
+  "name": "",
+  "private": false,
+  "description": "",
+  "version": "0.1.0",
+  "author": "Justin Whitney",
+  "dependencies": {
+    "gatsby": "^2.7.1",
+    "gatsby-image": "^2.1.1",
+    "gatsby-plugin-manifest": "^2.1.1",
+    "gatsby-plugin-offline": "^2.1.1",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-sharp": "^2.1.1",
+    "gatsby-source-filesystem": "^2.0.37",
+    "gatsby-transformer-sharp": "^2.1.19",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "three": "^0.104.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    ""
+  ],
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JMWhitney/PortfolioDesign3.git"
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   },
-  "author": "Justin Whitney",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JMWhitney/PortfolioDesign3/issues"
-  },
-  "homepage": "https://github.com/JMWhitney/PortfolioDesign3#readme"
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
 }

@@ -1,4 +1,6 @@
-function init() {
+import * as THREE from "three";
+
+function logo() {
   var container = document.getElementById('logo');
   var containerWidth = container.clientWidth;
   var containerHeight = container.clientHeight;
@@ -105,4 +107,4 @@ function update(renderer, scene, camera, clock) {
 	});
 }
 
-var scene = init();
+export default logo;

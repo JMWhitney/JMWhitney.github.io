@@ -16,8 +16,8 @@
     height:100%;
     left:0;
     bottom:0px;
-    // perspective: 200px;
-    perspective: calc(7.5vw + 7.5vh);
+    perspective: 200px;
+    // perspective: calc(7.5vw + 7.5vh);
   }
 
   .grid {
@@ -137,7 +137,7 @@
     }
     &:nth-child(2) {
       left:20%;
-      animation: moveDot 20s infinite;
+      animation: moveDot 10s infinite;
     }
     &:nth-child(3) {
       left:30%;
@@ -145,7 +145,7 @@
     }
     &:nth-child(4) {
       left:50%;
-      animation: moveDot 30s infinite;
+      animation: moveDot 9s infinite;
     }
     &:nth-child(5) {
       left:60%;
