@@ -44,7 +44,7 @@ class NavBar extends React.Component {
           <i className="fas fa-home"></i>
         </Link>
 
-        <Link onClick={ this.highlight } to="/">
+        <Link onClick={ this.highlight } to="/skills">
           <div id="triangle"></div>
           <i className="fas fa-toolbox"></i>
         </Link>

@@ -123,7 +123,7 @@ nav #links .active #triangle {
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-right: 10px solid #1d1d23;
+  border-right: 10px solid #0c102d;
 }
 
 nav #links .active i {
@@ -201,7 +201,7 @@ nav #menu {
 
 #title h1 span#outline {
   -webkit-text-stroke: 9px #757575;
-  text-shadow: 10px  10px 12px black, 10px -10px 12px black, -10px  10px 12px black, -10px  -10px 12px black;
+  text-shadow: 0px -10px 12px black, 0px -10px 12px black, 0px  10px 12px black, 0px  10px 12px black, 10px  10px 12px black, 10px -10px 12px black, -10px  10px 12px black, -10px -10px 12px black;
   position: absolute;
   left: 0;
   top: 0;
@@ -219,13 +219,7 @@ nav #menu {
           transform: skewY(-10deg);
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-body #background {
+#background {
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -236,7 +230,7 @@ body #background {
   background-size: calc(20vh + 20vw);
 }
 
-body #background .grid-wrapper {
+#background .grid-wrapper {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -246,7 +240,7 @@ body #background .grid-wrapper {
           perspective: 200px;
 }
 
-body #background .grid {
+#background .grid {
   position: absolute;
   top: 0;
   left: -50%;
@@ -261,14 +255,14 @@ body #background .grid {
   background: radial-gradient(circle closest-side at 50% 37%, #961371, #140214);
 }
 
-body #background .line {
+#background .line {
   position: absolute;
   background: rgba(87, 193, 232, 0.35);
   -webkit-box-shadow: 0px 0px 5px #21d392;
           box-shadow: 0px 0px 5px #21d392;
 }
 
-body #background .vertical .line {
+#background .vertical .line {
   top: 0;
   left: 0;
   bottom: 0;
@@ -277,47 +271,47 @@ body #background .vertical .line {
   background: linear-gradient(top, rgba(255, 255, 255, 0), #57c1e8);
 }
 
-body #background .vertical .line:nth-child(1) {
+#background .vertical .line:nth-child(1) {
   left: 10%;
 }
 
-body #background .vertical .line:nth-child(2) {
+#background .vertical .line:nth-child(2) {
   left: 20%;
 }
 
-body #background .vertical .line:nth-child(3) {
+#background .vertical .line:nth-child(3) {
   left: 30%;
 }
 
-body #background .vertical .line:nth-child(4) {
+#background .vertical .line:nth-child(4) {
   left: 40%;
 }
 
-body #background .vertical .line:nth-child(5) {
+#background .vertical .line:nth-child(5) {
   left: 50%;
 }
 
-body #background .vertical .line:nth-child(6) {
+#background .vertical .line:nth-child(6) {
   left: 60%;
 }
 
-body #background .vertical .line:nth-child(7) {
+#background .vertical .line:nth-child(7) {
   left: 70%;
 }
 
-body #background .vertical .line:nth-child(8) {
+#background .vertical .line:nth-child(8) {
   left: 80%;
 }
 
-body #background .vertical .line:nth-child(9) {
+#background .vertical .line:nth-child(9) {
   left: 90%;
 }
 
-body #background .vertical .line:nth-child(10) {
+#background .vertical .line:nth-child(10) {
   left: 100%;
 }
 
-body #background .horizontal .line {
+#background .horizontal .line {
   top: 0;
   left: 0;
   right: 0;
@@ -326,84 +320,84 @@ body #background .horizontal .line {
   background: #57c1e8;
 }
 
-body #background .horizontal .line:nth-child(1) {
+#background .horizontal .line:nth-child(1) {
   top: 0%;
   opacity: 0.1;
   -webkit-animation: moveLine 3s linear infinite;
           animation: moveLine 3s linear infinite;
 }
 
-body #background .horizontal .line:nth-child(2) {
+#background .horizontal .line:nth-child(2) {
   top: 10%;
   opacity: 0.2;
   -webkit-animation: moveLine 3s linear infinite;
           animation: moveLine 3s linear infinite;
 }
 
-body #background .horizontal .line:nth-child(3) {
+#background .horizontal .line:nth-child(3) {
   top: 20%;
   opacity: 0.3;
   -webkit-animation: moveLine 3s linear infinite;
           animation: moveLine 3s linear infinite;
 }
 
-body #background .horizontal .line:nth-child(4) {
+#background .horizontal .line:nth-child(4) {
   top: 30%;
   opacity: 0.4;
   -webkit-animation: moveLine 3s linear infinite;
           animation: moveLine 3s linear infinite;
 }
 
-body #background .horizontal .line:nth-child(5) {
+#background .horizontal .line:nth-child(5) {
   top: 40%;
   opacity: 0.5;
   -webkit-animation: moveLine 3s linear infinite;
           animation: moveLine 3s linear infinite;
 }
 
-body #background .horizontal .line:nth-child(6) {
+#background .horizontal .line:nth-child(6) {
   top: 50%;
   opacity: 0.6;
   -webkit-animation: moveLine 3s linear infinite;
           animation: moveLine 3s linear infinite;
 }
 
-body #background .horizontal .line:nth-child(7) {
+#background .horizontal .line:nth-child(7) {
   top: 60%;
   opacity: 0.7;
   -webkit-animation: moveLine 3s linear infinite;
           animation: moveLine 3s linear infinite;
 }
 
-body #background .horizontal .line:nth-child(8) {
+#background .horizontal .line:nth-child(8) {
   top: 70%;
   opacity: 0.8;
   -webkit-animation: moveLine 3s linear infinite;
           animation: moveLine 3s linear infinite;
 }
 
-body #background .horizontal .line:nth-child(9) {
+#background .horizontal .line:nth-child(9) {
   top: 80%;
   opacity: 0.9;
   -webkit-animation: moveLine 3s linear infinite;
           animation: moveLine 3s linear infinite;
 }
 
-body #background .horizontal .line:nth-child(10) {
+#background .horizontal .line:nth-child(10) {
   top: 90%;
   opacity: 1;
   -webkit-animation: moveLine 3s linear infinite;
           animation: moveLine 3s linear infinite;
 }
 
-body #background .horizontal .line:nth-child(11) {
+#background .horizontal .line:nth-child(11) {
   top: 100%;
   opacity: 1;
   -webkit-animation: moveLine 3s linear infinite;
           animation: moveLine 3s linear infinite;
 }
 
-body #background .dot {
+#background .dot {
   position: absolute;
   background: #57C1E8;
   width: 5px;
@@ -415,43 +409,43 @@ body #background .dot {
   -webkit-backface-visibility: hidden;
 }
 
-body #background .dot:nth-child(1) {
+#background .dot:nth-child(1) {
   left: 10%;
   -webkit-animation: moveDot 5s infinite;
           animation: moveDot 5s infinite;
 }
 
-body #background .dot:nth-child(2) {
+#background .dot:nth-child(2) {
   left: 20%;
   -webkit-animation: moveDot 10s infinite;
           animation: moveDot 10s infinite;
 }
 
-body #background .dot:nth-child(3) {
+#background .dot:nth-child(3) {
   left: 30%;
   -webkit-animation: moveDot 15s infinite;
           animation: moveDot 15s infinite;
 }
 
-body #background .dot:nth-child(4) {
+#background .dot:nth-child(4) {
   left: 50%;
   -webkit-animation: moveDot 9s infinite;
           animation: moveDot 9s infinite;
 }
 
-body #background .dot:nth-child(5) {
+#background .dot:nth-child(5) {
   left: 60%;
   -webkit-animation: moveDot 12s infinite;
           animation: moveDot 12s infinite;
 }
 
-body #background .dot:nth-child(6) {
+#background .dot:nth-child(6) {
   left: 80%;
   -webkit-animation: moveDot 6s infinite;
           animation: moveDot 6s infinite;
 }
 
-body #background .dot:nth-child(7) {
+#background .dot:nth-child(7) {
   left: 90%;
   -webkit-animation: moveDot 8s infinite;
           animation: moveDot 8s infinite;
@@ -477,5 +471,139 @@ body #background .dot:nth-child(7) {
     top: 0%;
     opacity: 0;
   }
+}
+
+#skills {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: #0c102d;
+}
+
+#skills .tree {
+  display: block;
+}
+
+#skills .tree ul {
+  position: relative;
+  padding: 1em 0;
+  white-space: nowrap;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#skills .tree ul::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+#skills .tree li {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  list-style-type: none;
+  position: relative;
+  padding: 1em .5em 0 .5em;
+}
+
+#skills .tree li::before, #skills .tree li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 50%;
+  border-top: 2px solid #FFF;
+  width: 50%;
+  height: 1em;
+}
+
+#skills .tree li::after {
+  right: auto;
+  left: 50%;
+  border-left: 2px solid #FFF;
+}
+
+#skills .tree li:only-child::after, #skills .tree li:only-child::before {
+  display: none;
+}
+
+#skills .tree li:only-child {
+  padding-top: 0;
+}
+
+#skills .tree li:first-child::before, #skills .tree li:last-child::after {
+  border: 0 none;
+}
+
+#skills .tree li:last-child::before {
+  border-right: 2px solid #ccc;
+  border-radius: 0 5px 0 0;
+}
+
+#skills .tree li:first-child::after {
+  border-radius: 5px 0 0 0;
+}
+
+#skills .tree ul ul::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: 2px solid #ccc;
+  width: 0;
+  height: 1em;
+}
+
+#skills .tree li button {
+  border: 2px solid #ccc;
+  padding: .5em .75em;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  color: #ececec;
+  position: relative;
+  top: 2px;
+  background: transparent;
+  font-size: 18px;
+}
+
+#skills .tree li button:hover,
+#skills .tree li button:hover + ul li button {
+  background: transparent;
+  color: #21d392;
+  border: 2px solid #21d392;
+}
+
+#skills .tree li button:hover + ul li::after,
+#skills .tree li button:hover + ul li::before,
+#skills .tree li button:hover + ul::before,
+#skills .tree li button:hover + ul ul::before {
+  border-color: #21d392;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.row {
+  display: inline-block;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=index.css.map */

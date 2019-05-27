@@ -1,8 +1,7 @@
-import React from "react"
+import React from "react";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import NavBar from "../components/navbar";
 
 const IndexPage = () => (
   <Layout>
@@ -49,8 +48,6 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-
-    <NavBar />
 
     <div id="title">
       <h1>

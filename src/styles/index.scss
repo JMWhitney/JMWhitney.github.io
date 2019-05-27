@@ -2,12 +2,20 @@
 @import "./mixins";
 @import "./nav";
 @import "./homepage";
+@import "./background";
+@import "./portfolio";
+@import "./skills";
 
 body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  
-  @import "./background";
-  
+}
+
+.row {
+  display: inline-block;
+}
+
+.row {
+  @include flexCenter(column);
 }

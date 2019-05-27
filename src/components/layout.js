@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+import NavBar from "../components/navbar";
 import "../styles/index.css"
 
 const Layout = ({ children }) => (
@@ -15,7 +16,10 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <main>{children}</main>
+      <main>
+        {children}
+        <NavBar />
+      </main>
     )}
   />
 )
