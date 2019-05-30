@@ -29,7 +29,9 @@
     width:200%;
     height:100%;
     margin-top:-50px;
-    transform: rotateX(45deg);
+    // transform: rotateY(45deg);
+    // transform: rotateX(45deg);
+    transform: rotate3d(1, 0, 0, 45deg);
     background: rgb(20, 2, 20);
     background: radial-gradient( circle closest-side at 50% 37%, rgb(150,19,113), rgb(20, 2, 20));
   }

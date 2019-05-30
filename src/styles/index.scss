@@ -13,9 +13,5 @@ body {
 }
 
 .row {
-  display: inline-block;
-}
-
-.row {
-  @include flexCenter(column);
+  @include flexCenter(row);
 }

@@ -249,8 +249,8 @@ nav #menu {
   width: 200%;
   height: 100%;
   margin-top: -50px;
-  -webkit-transform: rotateX(45deg);
-          transform: rotateX(45deg);
+  -webkit-transform: rotate3d(1, 0, 0, 45deg);
+          transform: rotate3d(1, 0, 0, 45deg);
   background: #140214;
   background: radial-gradient(circle closest-side at 50% 37%, #961371, #140214);
 }
@@ -477,14 +477,22 @@ nav #menu {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background: #0c102d;
 }
 
-#skills .tree {
-  display: block;
+.card {
+  display: inline-block;
+  height: 300px;
+  width: 600px;
+  margin-top: 2vh;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 5px solid #21d392;
+  background: rgba(6, 8, 22, 0.842);
 }
 
-#skills .tree ul {
+.tree ul {
   position: relative;
   padding: 1em 0;
   white-space: nowrap;
@@ -492,13 +500,13 @@ nav #menu {
   text-align: center;
 }
 
-#skills .tree ul::after {
+.tree ul::after {
   content: '';
   display: table;
   clear: both;
 }
 
-#skills .tree li {
+.tree li {
   display: inline-block;
   vertical-align: top;
   text-align: center;
@@ -507,7 +515,7 @@ nav #menu {
   padding: 1em .5em 0 .5em;
 }
 
-#skills .tree li::before, #skills .tree li::after {
+.tree li::before, .tree li::after {
   content: '';
   position: absolute;
   top: 0;
@@ -517,34 +525,34 @@ nav #menu {
   height: 1em;
 }
 
-#skills .tree li::after {
+.tree li::after {
   right: auto;
   left: 50%;
   border-left: 2px solid #FFF;
 }
 
-#skills .tree li:only-child::after, #skills .tree li:only-child::before {
+.tree li:only-child::after, .tree li:only-child::before {
   display: none;
 }
 
-#skills .tree li:only-child {
+.tree li:only-child {
   padding-top: 0;
 }
 
-#skills .tree li:first-child::before, #skills .tree li:last-child::after {
+.tree li:first-child::before, .tree li:last-child::after {
   border: 0 none;
 }
 
-#skills .tree li:last-child::before {
+.tree li:last-child::before {
   border-right: 2px solid #ccc;
   border-radius: 0 5px 0 0;
 }
 
-#skills .tree li:first-child::after {
+.tree li:first-child::after {
   border-radius: 5px 0 0 0;
 }
 
-#skills .tree ul ul::before {
+.tree ul ul::before {
   content: '';
   position: absolute;
   top: 0;
@@ -554,7 +562,7 @@ nav #menu {
   height: 1em;
 }
 
-#skills .tree li button {
+.tree li button {
   border: 2px solid #ccc;
   padding: .5em .75em;
   text-decoration: none;
@@ -567,17 +575,17 @@ nav #menu {
   font-size: 18px;
 }
 
-#skills .tree li button:hover,
-#skills .tree li button:hover + ul li button {
+.tree li button:hover,
+.tree li button:hover + ul li button {
   background: transparent;
   color: #21d392;
   border: 2px solid #21d392;
 }
 
-#skills .tree li button:hover + ul li::after,
-#skills .tree li button:hover + ul li::before,
-#skills .tree li button:hover + ul::before,
-#skills .tree li button:hover + ul ul::before {
+.tree li button:hover + ul li::after,
+.tree li button:hover + ul li::before,
+.tree li button:hover + ul::before,
+.tree li button:hover + ul ul::before {
   border-color: #21d392;
 }
 
@@ -588,17 +596,13 @@ body {
 }
 
 .row {
-  display: inline-block;
-}
-
-.row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
