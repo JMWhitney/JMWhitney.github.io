@@ -133,6 +133,7 @@
     border-radius: $gridLine;
     box-shadow: 0 0 3px #fff;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     &:nth-child(1) {
       left:10%;
       animation: moveDot 5s infinite;

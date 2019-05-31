@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Damion|Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 @-webkit-keyframes moveLine {
   0% {
     -webkit-transform: translateY(-10vh);
@@ -170,6 +172,24 @@ nav #menu {
   }
 }
 
+.css3D-text-shadow {
+  margin: 0;
+  font-size: 8vw;
+  padding: 2rem;
+  color: #fff;
+  font-family: Montserrat, Arial Black, sans-serif;
+  text-align: center;
+  text-shadow: 0 0.01em 0 #961371, 0 0.02em 0 #961371, 0 0.03em 0 #961371, 0 0.04em 0 #961371, 0 0.05em 0 #961371, 0 0.06em 0 #961371, 0 0.07em 0 #961371, 0 0.08em 0 #961371, 0 0.09em 0 #961371, 0 0.1em 0 #961371, 0 0.06em 0.02em rgba(104, 104, 92, 0.2), 0 -0.02em 0.03em rgba(104, 104, 92, 0.17), -0.02em 0.1em 0.02em rgba(104, 104, 92, 0.15), -0.08em 0.1em 0.06em rgba(104, 104, 92, 0.15);
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -o-hyphens: auto;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  -webkit-hyphenate-character: "\2010";
+}
+
 #title {
   position: absolute;
   background: rgba(0, 0, 0, 0);
@@ -179,7 +199,7 @@ nav #menu {
 }
 
 #title h1 {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: calc(4vh + 4vw);
   font-weight: bold;
   text-transform: uppercase;
@@ -187,12 +207,13 @@ nav #menu {
   position: relative;
   -webkit-transform: scaleX(1.25);
           transform: scaleX(1.25);
+  letter-spacing: 10px;
 }
 
 #title h1 span {
   color: transparent;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(22%, #fff), color-stop(50%, #8a8a8a), color-stop(51%, #383838), color-stop(78%, #fff), to(#fff));
-  background: linear-gradient(#fff 0%, #fff 22%, #8a8a8a 50%, #383838 51%, #fff 78%, #fff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(22%, #fff), color-stop(50%, #8a8a8a), color-stop(51%, #181000), color-stop(60%, #ff961d), color-stop(70%, #ffe4b3), to(#fff));
+  background: linear-gradient(#fff 0%, #fff 22%, #8a8a8a 50%, #181000 51%, #ff961d 60%, #ffe4b3 70%, #fff 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -200,7 +221,7 @@ nav #menu {
 }
 
 #title h1 span#outline {
-  -webkit-text-stroke: 9px #757575;
+  -webkit-text-stroke: calc(0.3vh + 0.3vw) #757575;
   text-shadow: 0px -10px 12px black, 0px -10px 12px black, 0px  10px 12px black, 0px  10px 12px black, 10px  10px 12px black, 10px -10px 12px black, -10px  10px 12px black, -10px -10px 12px black;
   position: absolute;
   left: 0;
@@ -212,7 +233,7 @@ nav #menu {
   margin-right: 0;
   margin-top: -1vh;
   float: right;
-  font-size: calc(2.2vh + 2.2vw);
+  font-size: calc(2.7vh + 2.7vw);
   font-family: 'Damion', cursive;
   color: #21d392;
   -webkit-transform: skewY(-10deg);
@@ -407,6 +428,7 @@ nav #menu {
   -webkit-box-shadow: 0 0 3px #fff;
           box-shadow: 0 0 3px #fff;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 #background .dot:nth-child(1) {
@@ -475,8 +497,9 @@ nav #menu {
 
 #skills {
   position: absolute;
-  width: 100vw;
+  width: 90vw;
   height: 100vh;
+  left: 72px;
 }
 
 .card {
@@ -489,7 +512,7 @@ nav #menu {
   padding: 10px;
   border-radius: 20px;
   border: 5px solid #21d392;
-  background: rgba(6, 8, 22, 0.842);
+  background: rgba(6, 8, 22, 0.911);
 }
 
 .tree ul {

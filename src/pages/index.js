@@ -51,10 +51,10 @@ const IndexPage = () => (
 
     <div id="title">
       <h1>
-        <span id="outline">Justin Whitney</span>
-        <span>Justin Whitney</span>
+        <span  id="outline">Justin Whitney</span>
+        <span >Justin Whitney</span>
       </h1>
-      <h2>Developer | Full Stack</h2>
+      <h2 className="css3D-text-shadow" >Developer | Full Stack</h2>
     </div>
 
     {/* <Link to="/page-2/">Go to page 2</Link> */}

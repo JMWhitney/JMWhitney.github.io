@@ -1,3 +1,35 @@
+.css3D-text-shadow {
+  margin: 0;
+  font-size: 8vw;
+  padding: 2rem;
+  color: #fff;
+  font-family: Montserrat, Arial Black, sans-serif;
+  text-align: center;
+  text-shadow: 0 .01em 0 $purpleHighlight, 
+    0 .02em 0 $purpleHighlight, 
+    0 .03em 0 $purpleHighlight, 
+    0 .04em 0 $purpleHighlight, 
+    0 .05em 0 $purpleHighlight, 
+    0 .06em 0 $purpleHighlight, 
+    0 .07em 0 $purpleHighlight, 
+    0 .08em 0 $purpleHighlight, 
+    0 .09em 0 $purpleHighlight, 
+    0 .10em 0 $purpleHighlight, 
+    0 .06em .02em rgba(104, 104, 92, 0.2), 
+    0 -.02em .03em rgba(104, 104, 92, 0.17), 
+    -.02em .10em .02em rgba(104, 104, 92, 0.15), 
+    -.08em .10em .06em rgba(104, 104, 92, 0.15);
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -o-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  -webkit-hyphenate-character: "\2010";
+}
+
 #title {
   position: absolute;
   background: rgba(0, 0, 0, 0.0);
@@ -6,26 +38,33 @@
   width: 60vw;
 
   h1 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: calc(4vh + 4vw);
     font-weight: bold;
     text-transform: uppercase;
     margin: 0;
     position: relative;
     transform: scaleX(1.25);
+    letter-spacing: 10px;
 
     span {
       color: transparent;
       // background: linear-gradient(#000000 0%,#113e87 22%,#10cccc 50%,#000000 51%,#e21ddc 78%,#ffffff 100%);
       // background: linear-gradient(#000000 0%,#113e87 22%,#10cccc 50%,#113e87 78%,#10cccc 100%);
-      background: linear-gradient(#fff 0%,#fff 22%,#8a8a8a 50%,rgb(56, 56, 56) 51%,#fff 78%,#fff 100%);
+      background: linear-gradient(#fff 0%,
+                                  #fff 22%,
+                                  #8a8a8a 50%,
+                                  rgb(24, 16, 0) 51%,
+                                  rgb(255, 150, 29) 60%,
+                                  rgb(255, 228, 179) 70%,
+                                  #fff 100%);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
       z-index: 1;
 
       &#outline {
-        -webkit-text-stroke: 9px rgb(117, 117, 117);
+        -webkit-text-stroke: calc(0.3vh + 0.3vw) rgb(117, 117, 117);
         text-shadow:    0px -10px 12px black,
                         0px -10px 12px black,
                         0px  10px 12px black,
@@ -48,7 +87,7 @@
     margin-right: 0;
     margin-top: -1vh;
     float: right;
-    font-size: calc(2.2vh + 2.2vw);
+    font-size: calc(2.7vh + 2.7vw);
     font-family: 'Damion', cursive;
     // text-shadow: -2px -2px 1px $primaryHot;
     color: $primaryCool;
