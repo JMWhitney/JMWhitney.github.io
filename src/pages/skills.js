@@ -6,7 +6,7 @@ const Skills = () => (
   <Layout>
     <SEO title="Justin Whitney" />
 
-    <div id="background">
+    <div id="background2">
         <div className="grid-wrapper">
           <div className="grid">
             <div className="vertical">
