@@ -17,12 +17,10 @@
   .grid {
     position:absolute;
     top:0;
-    left:-50%;
     right:0;
     bottom:0;
-    width:200%;
+    width:100%;
     height:100%;
-    margin-top:-50px;
     background: rgb(20, 2, 20);
   }
 
@@ -125,31 +123,31 @@
     backface-visibility: hidden;
     &:nth-child(1) {
       top:10%;
-      animation: moveDotRight 15s infinite;
+      animation: moveDotRight 15s linear infinite;
     }
     &:nth-child(2) {
       left:20%;
-      animation: moveDotUp 10s infinite;
+      animation: moveDotUp 10s linear infinite;
     }
     &:nth-child(3) {
       top:30%;
-      animation: moveDotRight 19s infinite;
+      animation: moveDotRight 19s linear infinite;
     }
     &:nth-child(4) {
       left:50%;
-      animation: moveDotUp 9s infinite;
+      animation: moveDotUp 9s linear infinite;
     }
     &:nth-child(5) {
       top:60%;
-      animation: moveDotRight 12s infinite;
+      animation: moveDotRight 12s linear infinite;
     }
     &:nth-child(6) {
       left:80%;
-      animation: moveDotUp 6s infinite;
+      animation: moveDotUp 6s linear infinite;
     }
     &:nth-child(7) {
       top:90%;
-      animation: moveDotRight 24s infinite;
+      animation: moveDotRight 24s linear infinite;
     }
   }
 

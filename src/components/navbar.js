@@ -25,7 +25,7 @@ class NavBar extends React.Component {
       <nav id="navbar">
       <Logo />
 
-      <div id="contact">
+      <div id="contact-icons">
 
         <a href="https://github.com/JMWhitney">
           <i className="fab fa-github"></i>

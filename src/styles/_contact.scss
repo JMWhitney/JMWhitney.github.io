@@ -1,0 +1,22 @@
+#contact {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  @include flexCenter(column);
+
+  h1 {
+    color: $primaryCool;
+  }
+  input {
+    margin: 20px;
+
+  }
+
+  button {
+    
+  }
+
+  textarea {
+
+  }
+}
