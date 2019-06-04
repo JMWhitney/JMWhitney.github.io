@@ -6,47 +6,68 @@ const Contact = () => (
   <Layout>
     <SEO title="Justin Whitney" />
 
-    <div id="background2">
-      <div className="grid-wrapper">
+    <div id="background3">
         <div className="grid">
-          <div className="vertical">
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-          </div>
-          <div className="dots">
-            <div className="dot"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
-          </div>
-          <div className="horizontal">
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-          </div>
+
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+
         </div>
+
       </div>
-    </div>
+
+      <div className="dots-horizontal">
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+      </div>
+
+      <div className="dots-verticle">
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+      </div>
     
     <form className="card" id="contact" action="https://formspree.io/JMWhitney96@gmail.com" method="POST">
       <h1>Send Me a Message</h1>

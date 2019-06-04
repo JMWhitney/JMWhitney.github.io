@@ -1,0 +1,30 @@
+$gridLine: 8px;
+#background3 {
+
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: rgb(3, 3, 43);
+
+  .grid {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display: grid;
+    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    // grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 16.3% 16.3% 16.3% 16.3% 16.3% 16.3%;
+    grid-template-rows: 16.3% 16.3% 16.3% 16.3% 16.3% 16.3%;
+    grid-gap: $gridLine;
+  }
+
+  .grid > div {
+    background: rgb(16, 1, 29);
+    border: 1px solid $primaryCool;
+    border-radius: 4px;
+  }
+
+  
+}

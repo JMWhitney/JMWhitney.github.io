@@ -6,7 +6,7 @@ const Skills = () => (
   <Layout>
     <SEO title="Justin Whitney" />
 
-    <div id="background2">
+    {/* <div id="background2">
         <div className="grid-wrapper">
           <div className="grid">
             <div className="vertical">
@@ -46,7 +46,72 @@ const Skills = () => (
             </div>
           </div>
         </div>
+      </div> */}
+
+<div id="background3">
+        <div className="grid">
+
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+
+        </div>
+
       </div>
+
+      <div className="dots">
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+      </div>
+
+      <div className="dots">
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+      </div>
+
+
 
     <div id="skills">
       
