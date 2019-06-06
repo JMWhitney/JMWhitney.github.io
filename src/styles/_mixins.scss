@@ -5,15 +5,15 @@
   align-items: center;
 }
 
-@mixin textOutline($h1border, $h1bordercolour) {
-	text-shadow: $h1border 0px $h1bordercolour,
-	           	-$h1border 0px $h1bordercolour,
-	           	 0px $h1border $h1bordercolour,
-	           	0px -$h1border $h1bordercolour,
-	       $h1border $h1border $h1bordercolour,
-	     -$h1border -$h1border $h1bordercolour,
-	      $h1border -$h1border $h1bordercolour,
-	      -$h1border $h1border $h1bordercolour;
+@mixin textOutline($h1border, $feather, $h1bordercolour) {
+	text-shadow:    0px -1 * $h1border $feather $h1bordercolour,
+									0px -1 * $h1border $feather $h1bordercolour,
+									0px  $h1border $feather $h1bordercolour,
+									0px  $h1border $feather $h1bordercolour,
+									$h1border  $h1border $feather $h1bordercolour,
+									$h1border -1 * $h1border $feather $h1bordercolour,
+								-1 * $h1border  $h1border $feather $h1bordercolour,
+								-1 * $h1border -1 * $h1border $feather $h1bordercolour;
 }
 
 @mixin neonText($color:#ee91ae, $width:1px, $outline:#fff) {

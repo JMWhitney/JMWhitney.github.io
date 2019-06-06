@@ -8,7 +8,6 @@ nav {
     @include flexCenter(row);
     width: 100vw;
     height: $logoSize;
-    background: rgba(0,0,0,0)
   }
 
   #logo {
@@ -33,7 +32,6 @@ nav {
       left: $logoSize;
       height: $logoSize;
       @include flexCenter(row);
-      align-items: center;
     }
 
     i {
@@ -48,21 +46,8 @@ nav {
   
   #links {
 
-    .active{
+    [aria-current="page"] {
       position: relative;
-
-      #triangle {
-        position: absolute;
-        top: 16px + 13.5px;
-        left: 82%;
-
-        width: 0; 
-        height: 0; 
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid transparent; 
-        
-        border-right:10px solid $primaryBackground; 
-      }
 
       i {
         color: $primaryCool;
@@ -80,28 +65,106 @@ nav {
       }
     }
     @media screen and (max-width: $break-small), (max-height: $break-small){
-      display: none;
-    }
-  }
-
-  #menu {
-    display: none;
-    position: absolute;
-
-    @media screen and (max-width: $break-small), (max-height: $break-small){
-      display: block;
-      right: 0;
-      padding: 10px;
-      
-      span {
-        display: block;
-        width: 33px;
-        height: 4px;
-        position: relative;
-        margin-bottom: 5px;
-        background: $primaryCool;
-        border-radius: 3px;
+      @include flexCenter(row);
+      i {
+        font-size: 22px;
       }
     }
   }
+}
+
+.burger-wrapper {
+  display: none;
+  position: absolute;
+
+  @media screen and (max-width: $break-small), (max-height: $break-small){
+    display: block;
+    right: 0;
+    padding: 10px;
+  }
+}
+
+// Burger menu button
+$burger--thickness: 4px;
+.burger {
+	$width: 28px;
+	
+	display: inline-block;
+  border: 0;
+	background: none;
+	outline: 0;
+	padding: 0;
+	cursor: pointer;
+
+	border-bottom: $burger--thickness solid $primaryCool;
+	width: $width;
+
+	transition: border-bottom 1s ease-in-out;
+	-webkit-transition: border-bottom 1s ease-in-out; 
+
+	// Fix for extra space in Firefox
+	&::-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}	 
+
+	&:before {
+		content: "";
+		display: block;
+		border-bottom: $burger--thickness solid $primaryCool;
+		width: 100%;
+		margin-bottom: 5px;
+		transition: transform 0.5s ease-in-out;    
+		-webkit-transition: -webkit-transform 0.5s ease-in-out;        
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		border-bottom: $burger--thickness solid $primaryCool;
+		width: 100%;
+		margin-bottom: 5px;
+		transition: transform 0.5s ease-in-out;
+		-webkit-transition: -webkit-transform 0.5s ease-in-out;
+	}
+}
+
+.burger-check {
+  display: none;
+}
+
+.burger-check:checked ~ .burger {
+  border-bottom: $burger--thickness solid transparent;
+  transition: border-bottom 0.8s ease-in-out;
+  -webkit-transition: border-bottom 0.8s ease-in-out;
+
+  &:before {
+    transform: rotate(-405deg) translateY(1px) translateX(-3px);
+    -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);      
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  }
+
+  &:after {
+    transform: rotate(405deg) translateY(-4px) translateX(-5px); 
+    -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);       
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  }
+}
+
+// * * * Navigation * * *
+$navigation__transition: max-height 0.5s ease-in-out;
+
+.navigation {
+  overflow: hidden;
+  max-height: 0;
+  
+  transition: $navigation__transition;
+}
+
+.burger-check:checked ~ .navigation {
+  max-height: 500px;
+  
+  transition: $navigation__transition;
 }
