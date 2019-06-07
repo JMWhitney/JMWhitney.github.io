@@ -379,6 +379,8 @@ nav #links i:hover {
 }
 
 #background {
+  margin: 0;
+  border: 0;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -556,83 +558,6 @@ nav #links i:hover {
           animation: moveLine 3s linear infinite;
 }
 
-#background .dot {
-  position: absolute;
-  background: #57C1E8;
-  width: 5px;
-  height: 5px;
-  top: 100%;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 3px #fff;
-          box-shadow: 0 0 3px #fff;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-#background .dot:nth-child(1) {
-  left: 10%;
-  -webkit-animation: moveDot 5s infinite;
-          animation: moveDot 5s infinite;
-}
-
-#background .dot:nth-child(2) {
-  left: 20%;
-  -webkit-animation: moveDot 10s infinite;
-          animation: moveDot 10s infinite;
-}
-
-#background .dot:nth-child(3) {
-  left: 30%;
-  -webkit-animation: moveDot 15s infinite;
-          animation: moveDot 15s infinite;
-}
-
-#background .dot:nth-child(4) {
-  left: 50%;
-  -webkit-animation: moveDot 9s infinite;
-          animation: moveDot 9s infinite;
-}
-
-#background .dot:nth-child(5) {
-  left: 60%;
-  -webkit-animation: moveDot 12s infinite;
-          animation: moveDot 12s infinite;
-}
-
-#background .dot:nth-child(6) {
-  left: 80%;
-  -webkit-animation: moveDot 6s infinite;
-          animation: moveDot 6s infinite;
-}
-
-#background .dot:nth-child(7) {
-  left: 90%;
-  -webkit-animation: moveDot 8s infinite;
-          animation: moveDot 8s infinite;
-}
-
-@-webkit-keyframes moveDot {
-  0% {
-    top: 100%;
-    opacity: 1;
-  }
-  100% {
-    top: 0%;
-    opacity: 0;
-  }
-}
-
-@keyframes moveDot {
-  0% {
-    top: 100%;
-    opacity: 1;
-  }
-  100% {
-    top: 0%;
-    opacity: 0;
-  }
-}
-
 #background3 {
   width: 100vw;
   height: 100vh;
@@ -643,22 +568,20 @@ nav #links i:hover {
 #background3 .grid {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 72px;
+  width: calc(100% - 72px);
   height: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 16.3% 16.3% 16.3% 16.3% 16.3% 16.3%;
-      grid-template-columns: 16.3% 16.3% 16.3% 16.3% 16.3% 16.3%;
-  -ms-grid-rows: 16.3% 16.3% 16.3% 16.3% 16.3% 16.3%;
-      grid-template-rows: 16.3% 16.3% 16.3% 16.3% 16.3% 16.3%;
-  grid-gap: 8px;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0px;
 }
 
 #background3 .grid > div {
   background: #10011d;
-  border: 1px solid #21d392;
-  border-radius: 4px;
 }
 
 #skills {

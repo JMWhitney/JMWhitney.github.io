@@ -23,15 +23,6 @@ const IndexPage = () => (
             <div className="line"></div>
             <div className="line"></div>
           </div>
-          <div className="dots">
-            <div className="dot"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
-          </div>
           <div className="horizontal">
             <div className="line"></div>
             <div className="line"></div>

@@ -1,4 +1,4 @@
-$gridLine: 8px;
+$gridLine: 0px;
 #background3 {
 
   width: 100vw;
@@ -9,21 +9,21 @@ $gridLine: 8px;
   .grid {
     position:absolute;
     top:0;
-    left:0;
-    width:100%;
+    left:$logoSize;
+    width:calc(100% - 72px);
     height:100%;
     display: grid;
-    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    // grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 16.3% 16.3% 16.3% 16.3% 16.3% 16.3%;
-    grid-template-rows: 16.3% 16.3% 16.3% 16.3% 16.3% 16.3%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    // grid-template-columns: 16.7% 16.3% 16.3% 16.3% 16.3% 16.3%;
+    // grid-template-rows: 16.3% 16.3% 16.3% 16.3% 16.3% 16.3%;
     grid-gap: $gridLine;
   }
 
   .grid > div {
     background: rgb(16, 1, 29);
-    border: 1px solid $primaryCool;
-    border-radius: 4px;
+    // border: 1px solid $purpleHighlight;
+    // border-radius: 4px;
   }
 
   

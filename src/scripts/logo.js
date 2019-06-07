@@ -1,6 +1,25 @@
 import * as THREE from "three";
 
-function logo() {
+//Singleton pattern to limit the number of webgl contexts to a single instance. Without this there would be a memory leak as users switch between pages and multiple contexts get created.
+var Singleton = (function() {
+	var instance;
+
+	function createInstance() {
+		var object = new THREE.WebGLRenderer( { antialias: true } );
+		return object
+	}
+
+	return {
+		getInstance: function() {
+			if (!instance) {
+				instance = createInstance();
+			}
+			return instance;
+		}
+	};
+})();
+
+function init() {
   var container = document.getElementById('logo');
   var containerWidth = container.clientWidth;
   var containerHeight = container.clientHeight;
@@ -44,7 +63,7 @@ function logo() {
 	camera.lookAt(new THREE.Vector3(0, 0, 0));
 
 	// renderer
-	var renderer = new THREE.WebGLRenderer( { antialias: true } );
+	var renderer = Singleton.getInstance();
 	renderer.setSize(containerWidth, containerHeight);
 	renderer.shadowMap.enabled = true;
 	container.appendChild(renderer.domElement);
@@ -107,4 +126,4 @@ function update(renderer, scene, camera, clock) {
 	});
 }
 
-export default logo;
+export default init;

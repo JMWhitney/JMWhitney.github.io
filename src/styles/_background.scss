@@ -1,5 +1,7 @@
 #background {
   $gridLine: 5px;
+  margin: 0;
+  border: 0;
 
   width: 100vw;
   height: 100vh;
@@ -123,50 +125,4 @@
       @include animateLine(100%, 1.0);
     }
   }
-
-  .dot {
-    position:absolute;
-    background:#57C1E8;
-    width: $gridLine;
-    height: $gridLine;
-    top:100%;
-    border-radius: $gridLine;
-    box-shadow: 0 0 3px #fff;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    &:nth-child(1) {
-      left:10%;
-      animation: moveDot 5s infinite;
-    }
-    &:nth-child(2) {
-      left:20%;
-      animation: moveDot 10s infinite;
-    }
-    &:nth-child(3) {
-      left:30%;
-      animation: moveDot 15s infinite;
-    }
-    &:nth-child(4) {
-      left:50%;
-      animation: moveDot 9s infinite;
-    }
-    &:nth-child(5) {
-      left:60%;
-      animation: moveDot 12s infinite;
-    }
-    &:nth-child(6) {
-      left:80%;
-      animation: moveDot 6s infinite;
-    }
-    &:nth-child(7) {
-      left:90%;
-      animation: moveDot 8s infinite;
-    }
-  }
-
-  @keyframes moveDot {
-    0%   { top: 100%; opacity:1; }
-    100% { top: 0%; opacity:0; }
-  }
-  
 }
