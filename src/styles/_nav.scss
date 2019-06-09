@@ -1,39 +1,45 @@
+$navigation__transition: top 0.1s ease-in-out;
+
+#logo {
+  background: $tertiaryBackground;
+  position: absolute;
+  top:0;
+  left:0;
+
+  width: $logoSize;
+  height: $logoSize;
+
+}
+
 nav {
-  @include flexCenter(column);
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   background: $secondaryBackground;
   width: $logoSize;
   position: absolute;
+
   @media screen and (max-width: $break-small), (max-height: $break-small) {
-    @include flexCenter(row);
+    display: flex;
+    flex-direction: row;
     width: 100vw;
     height: $logoSize;
+    top: -$logoSize;
+    transition: $navigation__transition;
   }
-
-  #logo {
-    background: $tertiaryBackground;
-    position: absolute;
+  
+  .placeholder {
     width: $logoSize;
     height: $logoSize;
-    left: 0px;
-    top: 0px;
-
-    img {
-      position: absolute;
-    }
+    content: '';
+    display: block;
   }
   
   #contact-icons {
-    position: absolute;
-    top: $logoSize;
-
     @media screen and (max-width: $break-small), (max-height: $break-small) {
-      top: 0px;
-      left: $logoSize;
-      height: $logoSize;
       @include flexCenter(row);
     }
-
+    
     i {
       padding: 12px 25px;
       font-size: 22px;
@@ -45,20 +51,17 @@ nav {
   }
   
   #links {
-
+    @include flexCenter(column);
+    
     [aria-current="page"] {
-      position: relative;
-
       i {
         color: $primaryCool;
       }
     }
-
+    
     i {
       padding: 25px;
       font-size: $iconSize;
-      width: $iconSize;
-      height: $iconSize;
       color: $primaryText;
       &:hover {
         color: $primaryCool;
@@ -73,34 +76,29 @@ nav {
   }
 }
 
-.burger-wrapper {
-  display: none;
-  position: absolute;
-
-  @media screen and (max-width: $break-small), (max-height: $break-small){
-    display: block;
-    right: 0;
-    padding: 10px;
-  }
-}
-
 // Burger menu button
 $burger--thickness: 4px;
 .burger {
-	$width: 28px;
-	
-	display: inline-block;
-  border: 0;
-	background: none;
-	outline: 0;
-	padding: 0;
-	cursor: pointer;
-
-	border-bottom: $burger--thickness solid $primaryCool;
-	width: $width;
-
-	transition: border-bottom 1s ease-in-out;
-	-webkit-transition: border-bottom 1s ease-in-out; 
+  $width: 28px;
+  display: none;
+  
+  @media screen and (max-width: $break-small), (max-height: $break-small){
+    display: inline-block;
+    position: absolute;
+    background: none;
+    right: 15px;
+    top: 15px;
+    outline: 0;
+    padding: 0;
+    cursor: pointer;
+    
+    border-bottom: $burger--thickness solid $primaryCool;
+    width: $width;
+  
+    transition: border-bottom 1s ease-in-out;
+    -webkit-transition: border-bottom 1s ease-in-out; 
+    z-index:10;
+  }
 
 	// Fix for extra space in Firefox
 	&::-moz-focus-inner {
@@ -153,18 +151,7 @@ $burger--thickness: 4px;
   }
 }
 
-// * * * Navigation * * *
-$navigation__transition: max-height 0.5s ease-in-out;
-
-.navigation {
-  overflow: hidden;
-  max-height: 0;
-  
-  transition: $navigation__transition;
-}
-
-.burger-check:checked ~ .navigation {
-  max-height: 500px;
-  
+.burger-check:checked ~ nav {
+  top: 0px;
   transition: $navigation__transition;
 }

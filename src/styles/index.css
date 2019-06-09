@@ -66,6 +66,15 @@
   }
 }
 
+#logo {
+  background: #09090b;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 72px;
+  height: 72px;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,12 +83,6 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 100vh;
   background: #131317;
   width: 72px;
@@ -95,40 +98,23 @@ nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 100vw;
     height: 72px;
+    top: -72px;
+    -webkit-transition: top 0.1s ease-in-out;
+    transition: top 0.1s ease-in-out;
   }
 }
 
-nav #logo {
-  background: #09090b;
-  position: absolute;
+nav .placeholder {
   width: 72px;
   height: 72px;
-  left: 0px;
-  top: 0px;
-}
-
-nav #logo img {
-  position: absolute;
-}
-
-nav #contact-icons {
-  position: absolute;
-  top: 72px;
+  content: '';
+  display: block;
 }
 
 @media screen and (max-width: 500px), (max-height: 500px) {
   nav #contact-icons {
-    top: 0px;
-    left: 72px;
-    height: 72px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -155,8 +141,20 @@ nav #contact-icons i:hover {
   color: #E5E7E0;
 }
 
-nav #links [aria-current="page"] {
-  position: relative;
+nav #links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav #links [aria-current="page"] i {
@@ -166,8 +164,6 @@ nav #links [aria-current="page"] i {
 nav #links i {
   padding: 25px;
   font-size: 32px;
-  width: 32px;
-  height: 32px;
   color: #E5E7E0;
 }
 
@@ -196,30 +192,26 @@ nav #links i:hover {
   }
 }
 
-.burger-wrapper {
+.burger {
   display: none;
-  position: absolute;
 }
 
 @media screen and (max-width: 500px), (max-height: 500px) {
-  .burger-wrapper {
-    display: block;
-    right: 0;
-    padding: 10px;
+  .burger {
+    display: inline-block;
+    position: absolute;
+    background: none;
+    right: 15px;
+    top: 15px;
+    outline: 0;
+    padding: 0;
+    cursor: pointer;
+    border-bottom: 4px solid #21d392;
+    width: 28px;
+    transition: border-bottom 1s ease-in-out;
+    -webkit-transition: border-bottom 1s ease-in-out;
+    z-index: 10;
   }
-}
-
-.burger {
-  display: inline-block;
-  border: 0;
-  background: none;
-  outline: 0;
-  padding: 0;
-  cursor: pointer;
-  border-bottom: 4px solid #21d392;
-  width: 28px;
-  transition: border-bottom 1s ease-in-out;
-  -webkit-transition: border-bottom 1s ease-in-out;
 }
 
 .burger::-moz-focus-inner {
@@ -279,17 +271,10 @@ nav #links i:hover {
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
 }
 
-.navigation {
-  overflow: hidden;
-  max-height: 0;
-  -webkit-transition: max-height 0.5s ease-in-out;
-  transition: max-height 0.5s ease-in-out;
-}
-
-.burger-check:checked ~ .navigation {
-  max-height: 500px;
-  -webkit-transition: max-height 0.5s ease-in-out;
-  transition: max-height 0.5s ease-in-out;
+.burger-check:checked ~ nav {
+  top: 0px;
+  -webkit-transition: top 0.1s ease-in-out;
+  transition: top 0.1s ease-in-out;
 }
 
 .css3D-text-shadow {
