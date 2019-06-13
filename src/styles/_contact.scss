@@ -1,8 +1,14 @@
 #contact {
-  position: absolute;
-  top: 25%;
-  left: 25%;
+  display: block;
   @include flexCenter(column);
+  height: 60vh;
+  width: 60vw; 
+  background: rgba(25, 25, 25, 1);
+  margin: auto;
+  margin-top: 15vh;
+  @media screen and (max-width: $break-small), (max-height: $break-small) {
+    width: 100vw;
+  }
 
   h1 {
     color: $primaryCool;
@@ -12,11 +18,40 @@
 
   }
 
-  button {
-    
+  button, input {
+    border: 2px solid gray;
+    background: rgba(25, 25, 25, 0.5);
+    color: $primaryCool;
+    height: 50px;
+    width: 40%;
+    margin: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .field-half {
+    width: 90%;
+    margin-left: -25px;
   }
 
   textarea {
+    width: 90%;
+    height: 50%;
+    margin: 0;
+    border: 2px solid gray;
+    background: rgba(25, 25, 25, 0.5);
+    color: $primaryCool;
+    font-size: 14px;
+  }
 
+  button[type="submit"]:hover {
+    background: $primaryCool;
+    color: black;
+  }
+
+  button[type="reset"]:hover {
+    background: $purpleHighlight;
+    color: black;
   }
 }
