@@ -924,6 +924,28 @@ nav #links i:hover {
   color: black;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+  background: #0c102d;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #21d392;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5e5e5e;
+}
+
 body {
   margin: 0;
   padding: 0;
