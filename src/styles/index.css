@@ -297,11 +297,11 @@ nav #links i:hover {
 }
 
 #title {
-  position: absolute;
+  position: block;
   background: rgba(0, 0, 0, 0);
-  top: 19%;
-  left: 24%;
   width: 60vw;
+  margin: auto;
+  margin-top: 20vh;
 }
 
 @media screen and (max-width: 600px), (max-height: 600px) {
@@ -376,7 +376,9 @@ nav #links i:hover {
   background-color: #0c102d;
   background-size: calc(20vh + 20vw);
   z-index: -999;
-  top: 0;
+  top: 0px;
+  -webkit-filter: blur(1px) brightness(95%);
+          filter: blur(1px) brightness(95%);
 }
 
 #background .grid-wrapper {
@@ -385,8 +387,8 @@ nav #links i:hover {
   height: 100%;
   left: 0;
   bottom: 0px;
-  -webkit-perspective: 200px;
-          perspective: 200px;
+  -webkit-perspective: calc(7.0vw + 7.0vh + 50px);
+          perspective: calc(7.0vw + 7.0vh + 50px);
 }
 
 #background .grid {
@@ -870,7 +872,8 @@ nav #links i:hover {
   width: 60vw;
   background: #191919;
   margin: auto;
-  margin-top: 15vh;
+  margin-top: 60vh;
+  margin-bottom: 10vh;
 }
 
 @media screen and (max-width: 600px), (max-height: 600px) {
@@ -899,29 +902,50 @@ nav #links i:hover {
   font-weight: bold;
 }
 
+@-webkit-keyframes autofill {
+  to {
+    color: #21d392;
+    background: transparent;
+  }
+}
+
+#contact input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
+
+#contact button:hover, #contact button:focus, #contact input:hover, #contact input:focus, #contact textarea:hover, #contact textarea:focus {
+  background: rgba(20, 20, 20, 0.5);
+}
+
 #contact .field-half {
   width: 90%;
-  margin-left: -25px;
+  margin-left: -20px;
 }
 
 #contact textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
   width: 90%;
   height: 50%;
   margin: 0;
   border: 2px solid gray;
   background: rgba(25, 25, 25, 0.5);
-  color: #21d392;
-  font-size: 14px;
+  color: whitesmoke;
+  font-size: 14.5px;
 }
 
 #contact button[type="submit"]:hover {
   background: #21d392;
   color: black;
+  cursor: pointer;
 }
 
 #contact button[type="reset"]:hover {
   background: #961371;
   color: black;
+  cursor: pointer;
 }
 
 /* width */
@@ -949,6 +973,7 @@ nav #links i:hover {
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .row {

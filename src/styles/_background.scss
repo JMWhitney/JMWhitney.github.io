@@ -12,7 +12,8 @@
   background-color: rgb(12,16,45);
   background-size: calc(20vh + 20vw);
   z-index: -999;
-  top: 0;
+  top: 0px;
+  filter: blur(1px) brightness(95%);
 
   .grid-wrapper {
     position: absolute;
@@ -20,8 +21,8 @@
     height:100%;
     left:0;
     bottom:0px;
-    perspective: 200px;
-    // perspective: calc(7.5vw + 7.5vh);
+    // perspective: 200px;
+    perspective: calc(7.0vw + 7.0vh + 50px);
   }
 
   .grid {

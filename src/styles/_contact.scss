@@ -5,7 +5,8 @@
   width: 60vw; 
   background: rgba(25, 25, 25, 1);
   margin: auto;
-  margin-top: 15vh;
+  margin-top: 60vh; 
+  margin-bottom: 10vh; 
   @media screen and (max-width: $break-small), (max-height: $break-small) {
     width: 100vw;
   }
@@ -30,28 +31,49 @@
     font-weight: bold;
   }
 
+  // Why is it so hard to change the styling of autofilled forms. Sigh.
+  @-webkit-keyframes autofill {
+    to {
+        color: $primaryCool;
+        background: transparent;
+    }
+  }
+
+  input:-webkit-autofill {
+      -webkit-animation-name: autofill;
+      -webkit-animation-fill-mode: both;
+  }
+
+  button:hover, button:focus, input:hover, input:focus, textarea:hover, textarea:focus {
+    background: rgba(20, 20, 20, 0.5);
+  }
+
   .field-half {
     width: 90%;
-    margin-left: -25px;
+    margin-left: -20px;
   }
 
   textarea {
+    box-sizing: border-box;
+    padding: 10px;
     width: 90%;
     height: 50%;
     margin: 0;
     border: 2px solid gray;
     background: rgba(25, 25, 25, 0.5);
-    color: $primaryCool;
-    font-size: 14px;
+    color: whitesmoke;
+    font-size: 14.5px;
   }
 
   button[type="submit"]:hover {
     background: $primaryCool;
     color: black;
+    cursor: pointer;
   }
 
   button[type="reset"]:hover {
     background: $purpleHighlight;
     color: black;
+    cursor: pointer;
   }
 }

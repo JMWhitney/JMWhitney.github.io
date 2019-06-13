@@ -31,11 +31,11 @@
 }
 
 #title {
-  position: absolute;
+  position: block;
   background: rgba(0, 0, 0, 0.0);
-  top: 19%;
-  left: 24%;
   width: 60vw;
+  margin: auto;
+  margin-top: 20vh;
 
   @media screen and (max-width: $break-small), (max-height: $break-small) {
     @include flexCenter(column);
