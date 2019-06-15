@@ -302,6 +302,7 @@ nav #links i:hover {
   width: 60vw;
   margin: auto;
   margin-top: 20vh;
+  margin-left: 25vw;
 }
 
 @media screen and (max-width: 600px), (max-height: 600px) {
@@ -324,7 +325,7 @@ nav #links i:hover {
 
 #title h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: calc(3vh + 3vw + 22px);
+  font-size: calc(2.8vh + 2.8vw + 22px);
   font-weight: bold;
   text-transform: uppercase;
   margin: 0;
@@ -336,8 +337,8 @@ nav #links i:hover {
 
 #title h1 span {
   color: transparent;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(22%, #fff), color-stop(50%, #8a8a8a), color-stop(51%, #181000), color-stop(60%, #723d00), color-stop(70%, #ffe4b3), to(#fff));
-  background: linear-gradient(#fff 0%, #fff 22%, #8a8a8a 50%, #181000 51%, #723d00 60%, #ffe4b3 70%, #fff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(22%, #8d6700), color-stop(50%, #fff1b3), color-stop(51%, #181400), color-stop(60%, #8d6700), color-stop(70%, #fff1b3), to(#fff));
+  background: linear-gradient(#fff 0%, #8d6700 22%, #fff1b3 50%, #181400 51%, #8d6700 60%, #fff1b3 70%, #fff 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -370,11 +371,11 @@ nav #links i:hover {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background-image: url("../images/bg.jpg");
+  background-image: url("../images/bg.svg");
   background-repeat: no-repeat;
   background-position: center top;
   background-color: #0c102d;
-  background-size: calc(20vh + 20vw);
+  background-size: calc(17vh + 17vw);
   z-index: -999;
   top: 0px;
   -webkit-filter: blur(1px) brightness(95%);
@@ -909,9 +910,18 @@ nav #links i:hover {
   }
 }
 
+@keyframes autofill {
+  to {
+    color: #21d392;
+    background: transparent;
+  }
+}
+
 #contact input:-webkit-autofill {
   -webkit-animation-name: autofill;
+          animation-name: autofill;
   -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 #contact button:hover, #contact button:focus, #contact input:hover, #contact input:focus, #contact textarea:hover, #contact textarea:focus {

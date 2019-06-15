@@ -36,6 +36,7 @@
   width: 60vw;
   margin: auto;
   margin-top: 20vh;
+  margin-left: 25vw;
 
   @media screen and (max-width: $break-small), (max-height: $break-small) {
     @include flexCenter(column);
@@ -43,8 +44,7 @@
 
   h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: calc(3vh + 3vw + 22px);
-    // font-size: calc(4vh + 4vw);
+    font-size: calc(2.8vh + 2.8vw + 22px);
     font-weight: bold;
     text-transform: uppercase;
     margin: 0;
@@ -57,11 +57,11 @@
       // background: linear-gradient(#000000 0%,#113e87 22%,#10cccc 50%,#000000 51%,#e21ddc 78%,#ffffff 100%);
       // background: linear-gradient(#000000 0%,#113e87 22%,#10cccc 50%,#113e87 78%,#10cccc 100%);
       background: linear-gradient(#fff 0%,
-                                  #fff 22%,
-                                  #8a8a8a 50%,
-                                  rgb(24, 16, 0) 51%,
-                                  rgb(114, 61, 0) 60%, 
-                                  rgb(255, 228, 179) 70%,
+                                  rgb(141, 103, 0) 22%,
+                                  rgb(255, 241, 179) 50%,
+                                  rgb(24, 20, 0) 51%,
+                                  rgb(141, 103, 0) 60%, 
+                                  rgb(255, 241, 179) 70%,
                                   #fff 100%);
       -webkit-background-clip: text;
       background-clip: text;
@@ -77,7 +77,6 @@
         z-index: -1;
       }
     }
-
     
   }
 

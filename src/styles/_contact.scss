@@ -32,7 +32,7 @@
   }
 
   // Why is it so hard to change the styling of autofilled forms. Sigh.
-  @-webkit-keyframes autofill {
+  @keyframes autofill {
     to {
         color: $primaryCool;
         background: transparent;
@@ -40,8 +40,8 @@
   }
 
   input:-webkit-autofill {
-      -webkit-animation-name: autofill;
-      -webkit-animation-fill-mode: both;
+      animation-name: autofill;
+      animation-fill-mode: both;
   }
 
   button:hover, button:focus, input:hover, input:focus, textarea:hover, textarea:focus {
