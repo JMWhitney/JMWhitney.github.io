@@ -2,10 +2,14 @@ $border-width: 2px;
 $reverse: false;
 
 #skills {
-  position: absolute;
-  width: 90vw;
-  height: 100vh;
-  left: $logoSize;
+  display: block;
+  width: 100%;
+  background: rgba(25, 25, 25, 1);
+
+  h1 {
+    color: $primaryCool;
+    text-align: center;
+  }
 }
 
 .card {

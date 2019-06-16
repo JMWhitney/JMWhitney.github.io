@@ -303,6 +303,7 @@ nav #links i:hover {
   margin: auto;
   margin-top: 20vh;
   margin-left: 25vw;
+  margin-bottom: 60vh;
 }
 
 @media screen and (max-width: 600px), (max-height: 600px) {
@@ -738,10 +739,14 @@ nav #links i:hover {
 }
 
 #skills {
-  position: absolute;
-  width: 90vw;
-  height: 100vh;
-  left: 72px;
+  display: block;
+  width: 100%;
+  background: #191919;
+}
+
+#skills h1 {
+  color: #21d392;
+  text-align: center;
 }
 
 .card {
@@ -870,17 +875,9 @@ nav #links i:hover {
       -ms-flex-align: center;
           align-items: center;
   height: 60vh;
-  width: 60vw;
   background: #191919;
   margin: auto;
-  margin-top: 60vh;
   margin-bottom: 10vh;
-}
-
-@media screen and (max-width: 600px), (max-height: 600px) {
-  #contact {
-    width: 100vw;
-  }
 }
 
 #contact h1 {
@@ -1000,5 +997,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.content-wrapper {
+  width: 75vw;
+  margin: auto;
+}
+
+@media screen and (max-width: 600px), (max-height: 600px) {
+  .content-wrapper {
+    width: 100vw;
+  }
 }
 /*# sourceMappingURL=index.css.map */

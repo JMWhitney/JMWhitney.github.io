@@ -28,19 +28,19 @@ const NavBar = () => (
     
       <div id="links">
 
-        <Link className="active" to="/">
+        <Link className="active" to="/#">
           <i className="fas fa-home"></i>
         </Link>
 
-        <Link to="/skills">
+        <Link to="/#skills">
           <i className="fas fa-toolbox"></i>
         </Link>
 
-        <Link to="/portfolio">
+        <Link to="/#portfolio">
           <i className="fas fa-image"></i>
         </Link>
 
-        <Link to="/contact">
+        <Link to="/#contact">
           <i className="fas fa-envelope"></i>
         </Link>
 

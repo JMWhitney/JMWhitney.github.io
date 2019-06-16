@@ -48,20 +48,24 @@ const IndexPage = () => (
       <h2 className="css3D-text-shadow" >Developer | Full Stack</h2>
     </div>
 
-    <form id="contact" action="https://formspree.io/JMWhitney96@gmail.com" method="POST">
-      <h1>Send Me a Message</h1>
-      <div className="field-half">
-        <input type="text" name="name" placeholder="Your Name"></input>
-        <input type="email" name="email" placeholder="Your email"></input>
+    <div className="content-wrapper">
+      <div id="skills">
+        <h1>Skills</h1>
       </div>
-      <textarea name="message" placeholder="Message"></textarea>
-      <div className="field-half">
-        <button type="submit">Send</button>
-        <button type="reset">Clear</button>
-      </div>
-    </form>
 
-    {/* <Link to="/page-2/">Go to page 2</Link> */}
+      <form id="contact" action="https://formspree.io/JMWhitney96@gmail.com" method="POST">
+        <h1>Send Me a Message</h1>
+        <div className="field-half">
+          <input type="text" name="name" placeholder="Your Name"></input>
+          <input type="email" name="email" placeholder="Your email"></input>
+        </div>
+        <textarea name="message" placeholder="Message"></textarea>
+        <div className="field-half">
+          <button type="submit">Send</button>
+          <button type="reset">Clear</button>
+        </div>
+      </form>
+    </div>
   </Layout>
 )
 

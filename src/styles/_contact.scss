@@ -2,14 +2,9 @@
   display: block;
   @include flexCenter(column);
   height: 60vh;
-  width: 60vw; 
   background: rgba(25, 25, 25, 1);
   margin: auto;
-  margin-top: 60vh; 
   margin-bottom: 10vh; 
-  @media screen and (max-width: $break-small), (max-height: $break-small) {
-    width: 100vw;
-  }
 
   h1 {
     color: $primaryCool;

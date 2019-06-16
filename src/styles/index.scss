@@ -18,3 +18,12 @@ body {
 .row {
   @include flexCenter(row);
 }
+
+.content-wrapper {
+  width: 75vw;
+  margin: auto;
+
+  @media screen and (max-width: $break-small), (max-height: $break-small) {
+    width: 100vw;
+  }
+}
