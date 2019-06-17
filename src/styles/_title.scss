@@ -57,20 +57,27 @@
       color: transparent;
       // background: linear-gradient(#000000 0%,#113e87 22%,#10cccc 50%,#000000 51%,#e21ddc 78%,#ffffff 100%);
       // background: linear-gradient(#000000 0%,#113e87 22%,#10cccc 50%,#113e87 78%,#10cccc 100%);
-      background: linear-gradient(#fff 0%,
-                                  rgb(141, 103, 0) 22%,
-                                  rgb(255, 241, 179) 50%,
-                                  rgb(24, 20, 0) 51%,
-                                  rgb(141, 103, 0) 60%, 
-                                  rgb(255, 241, 179) 70%,
-                                  #fff 100%);
+      // background: linear-gradient(#fff 0%,
+      //                             rgb(141, 103, 0) 22%,
+      //                             rgb(255, 241, 179) 50%,
+      //                             rgb(24, 20, 0) 51%,
+      //                             rgb(141, 103, 0) 60%, 
+      //                             rgb(255, 241, 179) 70%,
+      //                             #fff 100%);                 
+      background: linear-gradient(rgb(2, 1, 1) 0%,
+      rgb(0, 12, 117) 22%,
+      rgb(193, 197, 255) 50%,
+      rgb(12, 0, 24) 51%,
+      rgb(113, 0, 141) 60%, 
+      rgb(212, 71, 255) 70%,
+      #fff 100%);                            
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
       z-index: 1;
 
       &#outline {
-        -webkit-text-stroke: calc(0.3vh + 0.3vw) rgb(117, 117, 117);
+        -webkit-text-stroke: calc(0.15vh + 0.15vw) rgb(165, 165, 165);
         @include textOutline(0.6vw, 0.6vw, black);
         position: absolute;
         left: 0;

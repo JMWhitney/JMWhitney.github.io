@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Damion|Work+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@font-face {
+  font-family: 'Azonix';
+  src: url("./fonts/Azonix.otf");
+}
+
 @-webkit-keyframes moveLine {
   0% {
     -webkit-transform: translateY(-10vh);
@@ -11,6 +16,7 @@
             transform: translateY(10vh);
   }
 }
+
 @keyframes moveLine {
   0% {
     -webkit-transform: translateY(-10vh);
@@ -90,7 +96,7 @@ nav {
   top: 0;
 }
 
-@media screen and (max-width: 600px), (max-height: 600px) {
+@media screen and (max-width: 650px), (max-height: 650px) {
   nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -114,7 +120,7 @@ nav .placeholder {
   display: block;
 }
 
-@media screen and (max-width: 600px), (max-height: 600px) {
+@media screen and (max-width: 650px), (max-height: 650px) {
   nav #contact-icons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -172,7 +178,7 @@ nav #links i:hover {
   color: #21d392;
 }
 
-@media screen and (max-width: 600px), (max-height: 600px) {
+@media screen and (max-width: 650px), (max-height: 650px) {
   nav #links {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -197,10 +203,10 @@ nav #links i:hover {
   display: none;
 }
 
-@media screen and (max-width: 600px), (max-height: 600px) {
+@media screen and (max-width: 650px), (max-height: 650px) {
   .burger {
     display: inline-block;
-    position: absolute;
+    position: fixed;
     background: none;
     right: 15px;
     top: 15px;
@@ -306,7 +312,7 @@ nav #links i:hover {
   margin-bottom: 60vh;
 }
 
-@media screen and (max-width: 600px), (max-height: 600px) {
+@media screen and (max-width: 650px), (max-height: 650px) {
   #title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -338,8 +344,8 @@ nav #links i:hover {
 
 #title h1 span {
   color: transparent;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(22%, #8d6700), color-stop(50%, #fff1b3), color-stop(51%, #181400), color-stop(60%, #8d6700), color-stop(70%, #fff1b3), to(#fff));
-  background: linear-gradient(#fff 0%, #8d6700 22%, #fff1b3 50%, #181400 51%, #8d6700 60%, #fff1b3 70%, #fff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#020101), color-stop(22%, #000c75), color-stop(50%, #c1c5ff), color-stop(51%, #0c0018), color-stop(60%, #71008d), color-stop(70%, #d447ff), to(#fff));
+  background: linear-gradient(#020101 0%, #000c75 22%, #c1c5ff 50%, #0c0018 51%, #71008d 60%, #d447ff 70%, #fff 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -347,7 +353,7 @@ nav #links i:hover {
 }
 
 #title h1 span#outline {
-  -webkit-text-stroke: calc(0.3vh + 0.3vw) #757575;
+  -webkit-text-stroke: calc(0.15vh + 0.15vw) #a5a5a5;
   text-shadow: 0px -0.6vw 0.6vw black, 0px -0.6vw 0.6vw black, 0px 0.6vw 0.6vw black, 0px 0.6vw 0.6vw black, 0.6vw 0.6vw 0.6vw black, 0.6vw -0.6vw 0.6vw black, -0.6vw 0.6vw 0.6vw black, -0.6vw -0.6vw 0.6vw black;
   position: absolute;
   left: 0;
@@ -381,6 +387,7 @@ nav #links i:hover {
   top: 0px;
   -webkit-filter: blur(1px) brightness(95%);
           filter: blur(1px) brightness(95%);
+  overflow: hidden;
 }
 
 #background .grid-wrapper {
@@ -747,6 +754,9 @@ nav #links i:hover {
 #skills h1 {
   color: #21d392;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
+  padding: 10px;
 }
 
 .card {
@@ -882,6 +892,8 @@ nav #links i:hover {
 
 #contact h1 {
   color: #21d392;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
 }
 
 #contact input {
@@ -983,6 +995,10 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  overflow: hidden;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1002,9 +1018,10 @@ body {
 .content-wrapper {
   width: 75vw;
   margin: auto;
+  font-size: 16px;
 }
 
-@media screen and (max-width: 600px), (max-height: 600px) {
+@media screen and (max-width: 650px), (max-height: 650px) {
   .content-wrapper {
     width: 100vw;
   }

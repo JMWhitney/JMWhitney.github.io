@@ -15,6 +15,10 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  overflow: hidden;
+}
+
 .row {
   @include flexCenter(row);
 }
@@ -22,6 +26,7 @@ body {
 .content-wrapper {
   width: 75vw;
   margin: auto;
+  font-size: 16px;
 
   @media screen and (max-width: $break-small), (max-height: $break-small) {
     width: 100vw;

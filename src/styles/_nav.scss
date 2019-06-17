@@ -85,7 +85,7 @@ $burger--thickness: 4px;
   
   @media screen and (max-width: $break-small), (max-height: $break-small){
     display: inline-block;
-    position: absolute;
+    position: fixed;
     background: none;
     right: 15px;
     top: 15px;

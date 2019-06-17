@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Damion|Work+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@font-face {
+  font-family: 'Azonix';
+  src: url('./fonts/Azonix.otf');
+}
 $primaryBackground: #0c102d;
 $secondaryBackground: #131317;
 $tertiaryBackground: #09090b;
@@ -10,6 +14,6 @@ $primaryText: #E5E7E0;
 $secondaryText: rgb(110, 110, 107);
 $purpleHighlight: rgb(150,19,113);
 $iconSize: 32px;
-$break-small: 600px;
+$break-small: 650px;
 $break-large: 1200px;
 $logoSize: 72px;
