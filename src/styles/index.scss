@@ -3,7 +3,6 @@
 @import "./nav";
 @import "./title";
 @import "./background";
-@import "./background2";
 @import "./portfolio";
 @import "./skills";
 @import "./contact";
@@ -21,6 +20,10 @@ main {
 
 .row {
   @include flexCenter(row);
+}
+
+.column {
+  @include flexCenter(column);
 }
 
 .content-wrapper {

@@ -53,6 +53,11 @@ const IndexPage = () => (
         <h1>Skills</h1>
       </div>
 
+      <div id="portfolio">
+        <h1>Projects</h1>
+        
+      </div>
+
       <form id="contact" action="https://formspree.io/JMWhitney96@gmail.com" method="POST">
         <h1>Send Me a Message</h1>
         <div className="field-half">

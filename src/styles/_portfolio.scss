@@ -1,0 +1,16 @@
+#portfolio {
+  display: block;
+  height: 60vh;
+  width: 100%;
+  background: rgba(25, 25, 25, 1);
+  margin: auto;
+  margin-bottom: 15px; 
+  text-align: center;
+
+  h1 {
+    color: $primaryCool;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    padding: 10px;
+  }
+}
