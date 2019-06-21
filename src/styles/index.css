@@ -378,11 +378,7 @@ nav #links i:hover {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background-image: url("../images/bg.svg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-color: #0c102d;
-  background-size: calc(17vh + 17vw);
+  background: radial-gradient(circle calc(13vw + 13vh) at 50% 27%, #ce1b9b, #0c102d);
   z-index: -999;
   top: 0px;
   -webkit-filter: blur(1px) brightness(95%);
@@ -398,6 +394,11 @@ nav #links i:hover {
   bottom: 0px;
   -webkit-perspective: calc(7.0vw + 7.0vh + 50px);
           perspective: calc(7.0vw + 7.0vh + 50px);
+  background-image: url("../images/bg.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+  background-size: calc(17vh + 17vw);
+  background-color: rgba(12, 16, 45, 0);
 }
 
 #background .grid {
@@ -418,15 +419,15 @@ nav #links i:hover {
 #background .line {
   position: absolute;
   background: rgba(87, 193, 232, 0.35);
-  -webkit-box-shadow: 0px 0px 5px #21d392;
-          box-shadow: 0px 0px 5px #21d392;
+  -webkit-box-shadow: 0px 0px 1px #21d392;
+          box-shadow: 0px 0px 1px #21d392;
 }
 
 #background .vertical .line {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 5px;
+  width: calc(0.16vw + 0.16vh);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#57c1e8));
   background: linear-gradient(top, rgba(255, 255, 255, 0), #57c1e8);
 }
@@ -475,7 +476,7 @@ nav #links i:hover {
   top: 0;
   left: 0;
   right: 0;
-  height: 5px;
+  height: calc(0.16vw + 0.16vh);
   z-index: 2;
   background: #57c1e8;
 }

@@ -1,16 +1,17 @@
 #background {
-  $gridLine: 5px;
+  $gridLine: calc(0.16vw + 0.16vh);
   margin: 0;
   border: 0;
 
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background-image: url("../images/bg.svg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-color: rgb(12,16,45);
-  background-size: calc(17vh + 17vw);
+  background: radial-gradient( 
+    circle calc(13vw + 13vh) at 50% 27%,
+  rgb(206, 27, 155),
+  rgb(12,16,45),
+  );
+  
   z-index: -999;
   top: 0px;
   filter: blur(1px) brightness(95%);
@@ -24,6 +25,11 @@
     bottom:0px;
     // perspective: 200px;
     perspective: calc(7.0vw + 7.0vh + 50px);
+    background-image: url("../images/bg.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    background-size: calc(17vh + 17vw);
+    background-color: rgba(12,16,45,0);
   }
 
   .grid {
@@ -37,14 +43,17 @@
     margin-top:-50px;
     transform: rotate3d(1, 0, 0, 45deg);
     background: rgb(20, 2, 20);
-    background: radial-gradient( circle closest-side at 50% 37%, rgb(150,19,113), rgb(20, 2, 20));
+    background: radial-gradient( 
+      circle closest-side at 50% 37%,
+      rgb(150,19,113),
+      rgb(20, 2, 20)
+    );
   }
 
   .line {
     position:absolute;
     background:rgba(87, 193, 232, 0.35);
-    // -webkit-backface-visibility: hidden;
-    box-shadow: 0px 0px 5px $primaryCool;
+    box-shadow: 0px 0px 1px $primaryCool;
   }
 
   .vertical .line {
@@ -52,7 +61,10 @@
     left:0;
     bottom:0;
     width:$gridLine;
-    background: linear-gradient(top, rgba(255,255,255,0), rgb(87, 193, 232));
+    background: linear-gradient(top,
+    rgba(255,255,255,0),
+    rgb(87, 193, 232)
+    );
     &:nth-child(1) {
       left:10%;
     }
