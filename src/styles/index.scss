@@ -26,10 +26,16 @@ main {
   @include flexCenter(column);
 }
 
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
 .content-wrapper {
-  width: 75vw;
+  width: 80vw;
   margin: auto;
   font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 
   @media screen and (max-width: $break-small), (max-height: $break-small) {
     width: 100vw;

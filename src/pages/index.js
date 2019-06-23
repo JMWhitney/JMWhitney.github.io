@@ -42,15 +42,53 @@ const IndexPage = () => (
 
     <div id="title">
       <h1>
-        <span  id="outline">Justin Whitney</span>
+        <span id="outline">Justin Whitney</span>
         <span >Justin Whitney</span>
       </h1>
       <h2 className="css3D-text-shadow" >Developer | Full Stack</h2>
     </div>
 
     <div className="content-wrapper">
-      <div id="skills">
+      <div id="skills" className="center">
         <h1>Skills</h1>
+          <div className="frontend">
+            <h2>Frontend</h2>
+            <ul>
+              <li>Javascript (ES6+)</li>
+              <li>HTML</li>
+              <li>CSS + Sass</li>
+              <li>React</li>
+              <li>Redux</li>
+              <li>Jest</li>
+              <li>GraphQL</li>
+            </ul>
+          </div>
+
+          <div className="backend">
+            <h2>Backend</h2>
+            <ul>
+              <li>Node.JS</li>
+              <li>Next.JS</li>
+              <li>Mocha</li>
+              <li>Chai</li>
+              <li>MongoDB</li>
+              <li>MySQL</li>
+              <li>SQL</li>
+              <li>PHP</li>
+              <li>C++</li>
+            </ul>
+          </div>
+
+          <div className="devops">
+            <h2>DevOps/Deployment</h2>
+            <ul>
+              <li>AWS</li>
+              <li>Heroku</li>
+              <li>Digital Ocean</li>
+              <li>DNS</li>
+              <li>Web Security Best Practices</li>
+            </ul>
+        </div>
       </div>
 
       <div id="portfolio">

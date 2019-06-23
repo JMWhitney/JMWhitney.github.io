@@ -576,17 +576,32 @@ nav #links i:hover {
 }
 
 #skills {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
   background: #191919;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: lightgray;
 }
 
 #skills h1 {
   color: #21d392;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 42px;
   letter-spacing: 3px;
-  padding: 10px;
+  padding: 50px;
+  background: #131317;
+}
+
+#skills h2 {
+  font-size: 28px;
+  color: #ce2522;
+}
+
+#skills ul {
+  font-size: 22px;
 }
 
 .card {
@@ -861,10 +876,20 @@ main {
           align-items: center;
 }
 
+.center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .content-wrapper {
-  width: 75vw;
+  width: 80vw;
   margin: auto;
   font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @media screen and (max-width: 650px), (max-height: 650px) {
