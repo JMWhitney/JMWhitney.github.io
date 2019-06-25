@@ -5,10 +5,8 @@ $navigation__transition: top 0.1s ease-in-out;
   position: absolute;
   top:0;
   left:0;
-
   width: $logoSize;
   height: $logoSize;
-
 }
 
 nav {
@@ -68,6 +66,13 @@ nav {
         color: $primaryCool;
       }
     }
+
+    .highlight {
+      i {
+        color: $primaryCool;
+      }
+    }
+    
     @media screen and (max-width: $break-small), (max-height: $break-small){
       @include flexCenter(row);
       i {
