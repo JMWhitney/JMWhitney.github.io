@@ -7,13 +7,15 @@ $reverse: false;
   background: rgba(25, 25, 25, 1);
   justify-content: space-around;
   color: lightgray;
+  // box-shadow: 5px 5px 3px $purpleHighlight;
+  outline: 1px solid $primaryCool;
 
   h1 {
     color: $primaryCool;
     text-align: center;
     font-size: 42px;
     letter-spacing: 3px;
-    padding: 50px;
+    padding: 40px;
     background: $secondaryBackground;
   }
 

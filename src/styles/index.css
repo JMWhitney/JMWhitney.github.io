@@ -584,6 +584,7 @@ nav #links i:hover {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   color: lightgray;
+  outline: 1px solid #21d392;
 }
 
 #skills h1 {
@@ -591,7 +592,7 @@ nav #links i:hover {
   text-align: center;
   font-size: 42px;
   letter-spacing: 3px;
-  padding: 50px;
+  padding: 40px;
   background: #131317;
 }
 

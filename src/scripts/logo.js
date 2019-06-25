@@ -1,5 +1,3 @@
-import * as THREE from "three";
-
 //Singleton pattern to limit the number of webgl contexts to a single instance. Without this there would be a memory leak as users switch between pages and multiple contexts get created.
 var Singleton = (function() {
 	var instance;
@@ -19,7 +17,7 @@ var Singleton = (function() {
 	};
 })();
 
-function init() {
+(function init() {
   var container = document.getElementById('logo');
   var containerWidth = container.clientWidth;
   var containerHeight = container.clientHeight;
@@ -71,7 +69,7 @@ function init() {
 	update(renderer, scene, camera, clock);
 
 	return scene;
-}
+})();
 
 function getMaterial(type, color) {
 	var selectedMaterial;
@@ -125,5 +123,3 @@ function update(renderer, scene, camera, clock) {
 		update(renderer, scene, camera, clock);
 	});
 }
-
-export default init;
