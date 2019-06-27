@@ -19,11 +19,17 @@ main {
 }
 
 .row {
-  @include flexCenter(row);
+  display: flex;
+  flex-direction: row;
 }
 
 .column {
-  @include flexCenter(column);
+  display: flex;
+  flex-direction: column;
+}
+
+.around {
+  justify-content: space-around;
 }
 
 .center {
