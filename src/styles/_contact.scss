@@ -1,7 +1,8 @@
 #contact {
   display: block;
   @include flexCenter(column);
-  height: 60vh;
+  height: 600px;
+  min-height: 60vh;
   background: rgba(25, 25, 25, 1);
   margin: auto;
   margin-bottom: 10vh; 
@@ -28,7 +29,6 @@
     font-weight: bold;
   }
 
-  // Why is it so hard to change the styling of autofilled forms. Sigh.
   @keyframes autofill {
     to {
         color: $primaryCool;
@@ -54,7 +54,11 @@
     box-sizing: border-box;
     padding: 10px;
     width: 90%;
-    height: 50%;
+    max-width: 90%;
+    min-width: 90%;
+    min-height: 50%;
+    max-height: 600px;
+
     margin: 0;
     border: 2px solid gray;
     background: rgba(25, 25, 25, 0.5);

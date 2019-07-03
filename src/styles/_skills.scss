@@ -4,12 +4,24 @@ $reverse: false;
 #skills {
   display: flex;
   width: 100%;
-  height: 100vh;
+  // height: 100vh;
   background: rgba(25, 25, 25, 1);
   justify-content: space-around;
   color: lightgray;
-  // box-shadow: 5px 5px 3px $purpleHighlight;
-  outline: 1px solid $primaryCool;
+  display: flex;
+  flex-direction: column;
+
+  .skill-divider {
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width: $break-med) {
+      flex-direction: column;
+    }
+  }
+
+  .skill-section{
+    margin-left: 30px;
+  }
 
   h1 {
     color: $primaryCool;
@@ -17,7 +29,11 @@ $reverse: false;
     font-size: 42px;
     letter-spacing: 3px;
     padding: 40px;
+    margin: 10px;
     background: $secondaryBackground;
+    @media screen and (max-width: $break-med) {
+      margin: 0;
+    }
   }
 
   h2 {
