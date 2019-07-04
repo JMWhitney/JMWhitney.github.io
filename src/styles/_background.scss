@@ -116,77 +116,75 @@
     z-index:2;
     background: rgb(87, 193, 232);
 
-    @media screen and (min-width: $break-med) {
-      &:nth-child(1) {
-        @include animateLine(0%, 0.1);
-      }
-      &:nth-child(2) {
-        @include animateLine(10%, 0.2);
-      }
-      &:nth-child(3) {
-        @include animateLine(20%, 0.3);
-      }
-      &:nth-child(4) {
-        @include animateLine(30%, 0.4);
-      }
-      &:nth-child(5) {
-        @include animateLine(40%, 0.5);
-      }
-      &:nth-child(6) {
-        @include animateLine(50%, 0.6);
-      }
-      &:nth-child(7) {
-        @include animateLine(60%, 0.7);
-      }
-      &:nth-child(8) {
-        @include animateLine(70%, 0.8);
-      }
-      &:nth-child(9) {
-        @include animateLine(80%, 0.9);
-      }
-      &:nth-child(10) {
-        @include animateLine(90%, 1.0);
-      }
-      &:nth-child(11) {
-        @include animateLine(100%, 1.0);
-      }
+    &:nth-child(1) {
+      @include animateLine(0%, 0.1);
+    }
+    &:nth-child(2) {
+      @include animateLine(10%, 0.2);
+    }
+    &:nth-child(3) {
+      @include animateLine(20%, 0.3);
+    }
+    &:nth-child(4) {
+      @include animateLine(30%, 0.4);
+    }
+    &:nth-child(5) {
+      @include animateLine(40%, 0.5);
+    }
+    &:nth-child(6) {
+      @include animateLine(50%, 0.6);
+    }
+    &:nth-child(7) {
+      @include animateLine(60%, 0.7);
+    }
+    &:nth-child(8) {
+      @include animateLine(70%, 0.8);
+    }
+    &:nth-child(9) {
+      @include animateLine(80%, 0.9);
+    }
+    &:nth-child(10) {
+      @include animateLine(90%, 1.0);
+    }
+    &:nth-child(11) {
+      @include animateLine(100%, 1.0);
     }
 
-    @media screen and (max-width: $break-med) {
-      &:nth-child(1) {
-        top: 0%;
-      }
-      &:nth-child(2) {
-        top: 10%;
-      }
-      &:nth-child(3) {
-        top: 20%;
-      }
-      &:nth-child(4) {
-        top: 30%;
-      }
-      &:nth-child(5) {
-        top: 40%;
-      }
-      &:nth-child(6) {
-        top: 50%;
-      }
-      &:nth-child(7) {
-        top: 60%;
-      }
-      &:nth-child(8) {
-        top: 70%;
-      }
-      &:nth-child(9) {
-        top: 80%;
-      }
-      &:nth-child(10) {
-        top: 90%;
-      }
-      &:nth-child(11) {
-        top: 100%;
-      }
-    }
+    // @media screen and (max-width: $break-med) {
+    //   &:nth-child(1) {
+    //     top: 0%;
+    //   }
+    //   &:nth-child(2) {
+    //     top: 10%;
+    //   }
+    //   &:nth-child(3) {
+    //     top: 20%;
+    //   }
+    //   &:nth-child(4) {
+    //     top: 30%;
+    //   }
+    //   &:nth-child(5) {
+    //     top: 40%;
+    //   }
+    //   &:nth-child(6) {
+    //     top: 50%;
+    //   }
+    //   &:nth-child(7) {
+    //     top: 60%;
+    //   }
+    //   &:nth-child(8) {
+    //     top: 70%;
+    //   }
+    //   &:nth-child(9) {
+    //     top: 80%;
+    //   }
+    //   &:nth-child(10) {
+    //     top: 90%;
+    //   }
+    //   &:nth-child(11) {
+    //     top: 100%;
+    //   }
+    // }
     
   }
 }

@@ -441,109 +441,81 @@ nav #links .highlight i {
   background: #57c1e8;
 }
 
-@media screen and (min-width: 900px) {
-  #background .horizontal .line:nth-child(1) {
-    top: 0%;
-    opacity: 0.1;
-    -webkit-animation: moveLine 3s linear infinite;
-            animation: moveLine 3s linear infinite;
-  }
-  #background .horizontal .line:nth-child(2) {
-    top: 10%;
-    opacity: 0.2;
-    -webkit-animation: moveLine 3s linear infinite;
-            animation: moveLine 3s linear infinite;
-  }
-  #background .horizontal .line:nth-child(3) {
-    top: 20%;
-    opacity: 0.3;
-    -webkit-animation: moveLine 3s linear infinite;
-            animation: moveLine 3s linear infinite;
-  }
-  #background .horizontal .line:nth-child(4) {
-    top: 30%;
-    opacity: 0.4;
-    -webkit-animation: moveLine 3s linear infinite;
-            animation: moveLine 3s linear infinite;
-  }
-  #background .horizontal .line:nth-child(5) {
-    top: 40%;
-    opacity: 0.5;
-    -webkit-animation: moveLine 3s linear infinite;
-            animation: moveLine 3s linear infinite;
-  }
-  #background .horizontal .line:nth-child(6) {
-    top: 50%;
-    opacity: 0.6;
-    -webkit-animation: moveLine 3s linear infinite;
-            animation: moveLine 3s linear infinite;
-  }
-  #background .horizontal .line:nth-child(7) {
-    top: 60%;
-    opacity: 0.7;
-    -webkit-animation: moveLine 3s linear infinite;
-            animation: moveLine 3s linear infinite;
-  }
-  #background .horizontal .line:nth-child(8) {
-    top: 70%;
-    opacity: 0.8;
-    -webkit-animation: moveLine 3s linear infinite;
-            animation: moveLine 3s linear infinite;
-  }
-  #background .horizontal .line:nth-child(9) {
-    top: 80%;
-    opacity: 0.9;
-    -webkit-animation: moveLine 3s linear infinite;
-            animation: moveLine 3s linear infinite;
-  }
-  #background .horizontal .line:nth-child(10) {
-    top: 90%;
-    opacity: 1;
-    -webkit-animation: moveLine 3s linear infinite;
-            animation: moveLine 3s linear infinite;
-  }
-  #background .horizontal .line:nth-child(11) {
-    top: 100%;
-    opacity: 1;
-    -webkit-animation: moveLine 3s linear infinite;
-            animation: moveLine 3s linear infinite;
-  }
+#background .horizontal .line:nth-child(1) {
+  top: 0%;
+  opacity: 0.1;
+  -webkit-animation: moveLine 3s linear infinite;
+          animation: moveLine 3s linear infinite;
 }
 
-@media screen and (max-width: 900px) {
-  #background .horizontal .line:nth-child(1) {
-    top: 0%;
-  }
-  #background .horizontal .line:nth-child(2) {
-    top: 10%;
-  }
-  #background .horizontal .line:nth-child(3) {
-    top: 20%;
-  }
-  #background .horizontal .line:nth-child(4) {
-    top: 30%;
-  }
-  #background .horizontal .line:nth-child(5) {
-    top: 40%;
-  }
-  #background .horizontal .line:nth-child(6) {
-    top: 50%;
-  }
-  #background .horizontal .line:nth-child(7) {
-    top: 60%;
-  }
-  #background .horizontal .line:nth-child(8) {
-    top: 70%;
-  }
-  #background .horizontal .line:nth-child(9) {
-    top: 80%;
-  }
-  #background .horizontal .line:nth-child(10) {
-    top: 90%;
-  }
-  #background .horizontal .line:nth-child(11) {
-    top: 100%;
-  }
+#background .horizontal .line:nth-child(2) {
+  top: 10%;
+  opacity: 0.2;
+  -webkit-animation: moveLine 3s linear infinite;
+          animation: moveLine 3s linear infinite;
+}
+
+#background .horizontal .line:nth-child(3) {
+  top: 20%;
+  opacity: 0.3;
+  -webkit-animation: moveLine 3s linear infinite;
+          animation: moveLine 3s linear infinite;
+}
+
+#background .horizontal .line:nth-child(4) {
+  top: 30%;
+  opacity: 0.4;
+  -webkit-animation: moveLine 3s linear infinite;
+          animation: moveLine 3s linear infinite;
+}
+
+#background .horizontal .line:nth-child(5) {
+  top: 40%;
+  opacity: 0.5;
+  -webkit-animation: moveLine 3s linear infinite;
+          animation: moveLine 3s linear infinite;
+}
+
+#background .horizontal .line:nth-child(6) {
+  top: 50%;
+  opacity: 0.6;
+  -webkit-animation: moveLine 3s linear infinite;
+          animation: moveLine 3s linear infinite;
+}
+
+#background .horizontal .line:nth-child(7) {
+  top: 60%;
+  opacity: 0.7;
+  -webkit-animation: moveLine 3s linear infinite;
+          animation: moveLine 3s linear infinite;
+}
+
+#background .horizontal .line:nth-child(8) {
+  top: 70%;
+  opacity: 0.8;
+  -webkit-animation: moveLine 3s linear infinite;
+          animation: moveLine 3s linear infinite;
+}
+
+#background .horizontal .line:nth-child(9) {
+  top: 80%;
+  opacity: 0.9;
+  -webkit-animation: moveLine 3s linear infinite;
+          animation: moveLine 3s linear infinite;
+}
+
+#background .horizontal .line:nth-child(10) {
+  top: 90%;
+  opacity: 1;
+  -webkit-animation: moveLine 3s linear infinite;
+          animation: moveLine 3s linear infinite;
+}
+
+#background .horizontal .line:nth-child(11) {
+  top: 100%;
+  opacity: 1;
+  -webkit-animation: moveLine 3s linear infinite;
+          animation: moveLine 3s linear infinite;
 }
 
 #projects {
@@ -587,6 +559,8 @@ nav #links .highlight i {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media screen and (max-width: 900px) {
@@ -603,6 +577,7 @@ nav #links .highlight i {
 }
 
 #skills h1 {
+  height: 100%;
   color: #21d392;
   text-align: center;
   font-size: 42px;
