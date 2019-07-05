@@ -1,6 +1,4 @@
-window.addEventListener('load', highlight);
-
-function highlight() {
+(function icons() {
 
   //Sections
   const skills = document.getElementById("skills");
@@ -16,7 +14,7 @@ function highlight() {
   const projectsIcon = document.getElementById("projects-icon");
   const contactIcon = document.getElementById("contact-icon");
 
-  function handleScroll() {
+  function highlight() {
     let p = window.scrollY;
     if( p <= skillsMidpoint ) {
       skillsIcon.classList.remove("highlight");
@@ -40,5 +38,7 @@ function highlight() {
       contactIcon.classList.add("highlight");
     }
   }
-  window.addEventListener('scroll', handleScroll);
-}
+
+  setInterval(highlight, 100);
+  
+})();
