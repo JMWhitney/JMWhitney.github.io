@@ -25,7 +25,6 @@
   
   z-index: -999;
   top: 0px;
-  filter: blur(1px) brightness(95%);
   overflow: hidden;
 
   .grid-wrapper {
@@ -41,6 +40,7 @@
     background-position: 50% 10%;
     background-size: calc(17vh + 17vw);
     background-color: rgba(12,16,45,0);
+    backface-visibility: hidden;
   }
 
   .grid {
@@ -59,12 +59,15 @@
       rgb(150,19,113),
       rgb(20, 2, 20)
     );
+    backface-visibility: hidden;
   }
 
   .line {
-    position:absolute;
-    background:rgba(87, 193, 232, 0.35);
+    position: absolute;
+    background:rgba(87, 193, 232, 0.8);
     box-shadow: 0px 0px 1px $primaryCool;
+    will-change: transform;
+    backface-visibility: hidden;
   }
 
   .vertical .line {
@@ -72,10 +75,10 @@
     left:0;
     bottom:0;
     width:$gridLine;
-    background: linear-gradient(top,
-    rgba(255,255,255,0),
-    rgb(87, 193, 232)
-    );
+    // background: linear-gradient(top,
+    // rgba(255,255,255,0),
+    // rgb(87, 193, 232)
+    // );
     &:nth-child(1) {
       left:10%;
     }
@@ -114,7 +117,7 @@
     right:0;
     height:$gridLine;
     z-index:2;
-    background: rgb(87, 193, 232);
+    // background: rgb(87, 193, 232);
 
     &:nth-child(1) {
       @include animateLine(0%, 0.1);

@@ -341,8 +341,6 @@ nav #links .highlight i {
   background: radial-gradient(circle calc(13vw + 13vh) at 50% 27%, #ce1b9b, #0c102d);
   z-index: -999;
   top: 0px;
-  -webkit-filter: blur(1px) brightness(95%);
-          filter: blur(1px) brightness(95%);
   overflow: hidden;
 }
 
@@ -359,6 +357,8 @@ nav #links .highlight i {
   background-position: 50% 10%;
   background-size: calc(17vh + 17vw);
   background-color: rgba(12, 16, 45, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 #background .grid {
@@ -374,13 +374,18 @@ nav #links .highlight i {
           transform: rotate3d(1, 0, 0, 45deg);
   background: #140214;
   background: radial-gradient(circle closest-side at 50% 37%, #961371, #140214);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 #background .line {
   position: absolute;
-  background: rgba(87, 193, 232, 0.35);
+  background: rgba(87, 193, 232, 0.8);
   -webkit-box-shadow: 0px 0px 1px #21d392;
           box-shadow: 0px 0px 1px #21d392;
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 #background .vertical .line {
@@ -388,8 +393,6 @@ nav #links .highlight i {
   left: 0;
   bottom: 0;
   width: calc(0.16vw + 0.16vh);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#57c1e8));
-  background: linear-gradient(top, rgba(255, 255, 255, 0), #57c1e8);
 }
 
 #background .vertical .line:nth-child(1) {
@@ -438,7 +441,6 @@ nav #links .highlight i {
   right: 0;
   height: calc(0.16vw + 0.16vh);
   z-index: 2;
-  background: #57c1e8;
 }
 
 #background .horizontal .line:nth-child(1) {
@@ -840,6 +842,8 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 main {

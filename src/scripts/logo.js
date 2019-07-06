@@ -16,7 +16,7 @@ function isMobile() {
   return false;
 }
 
-if(isMobile()) {
+if(!isMobile()) {
 	var ThreeJS = document.createElement('script');
 	ThreeJS.src = "https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js";
 	ThreeJS.onload = function() {
