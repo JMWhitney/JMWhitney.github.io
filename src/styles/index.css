@@ -522,7 +522,7 @@ nav #links .highlight i {
 
 #projects {
   display: block;
-  height: 60vh;
+  min-height: 60vh;
   width: 100%;
   background: #191919;
   margin: auto;
@@ -582,7 +582,7 @@ nav #links .highlight i {
   height: 100%;
   color: #21d392;
   text-align: center;
-  font-size: 42px;
+  font-size: 2.5rem;
   letter-spacing: 3px;
   padding: 40px;
   margin: 10px;
@@ -596,122 +596,12 @@ nav #links .highlight i {
 }
 
 #skills h2 {
-  font-size: 28px;
+  font-size: 2rem;
   color: #ce2522;
 }
 
 #skills ul {
-  font-size: 22px;
-}
-
-.card {
-  display: inline-block;
-  height: 300px;
-  width: 600px;
-  margin-top: 2vh;
-  margin-left: 5px;
-  margin-right: 5px;
-  padding: 10px;
-  border-radius: 20px;
-  border: 2px solid #21d392;
-  background: #060816;
-}
-
-.tree ul {
-  position: relative;
-  padding: 1em 0;
-  white-space: nowrap;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.tree ul::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.tree li {
-  display: inline-block;
-  vertical-align: top;
-  text-align: center;
-  list-style-type: none;
-  position: relative;
-  padding: 1em .5em 0 .5em;
-}
-
-.tree li::before, .tree li::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 50%;
-  border-top: 2px solid #FFF;
-  width: 50%;
-  height: 1em;
-}
-
-.tree li::after {
-  right: auto;
-  left: 50%;
-  border-left: 2px solid #FFF;
-}
-
-.tree li:only-child::after, .tree li:only-child::before {
-  display: none;
-}
-
-.tree li:only-child {
-  padding-top: 0;
-}
-
-.tree li:first-child::before, .tree li:last-child::after {
-  border: 0 none;
-}
-
-.tree li:last-child::before {
-  border-right: 2px solid #ccc;
-  border-radius: 0 5px 0 0;
-}
-
-.tree li:first-child::after {
-  border-radius: 5px 0 0 0;
-}
-
-.tree ul ul::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  border-left: 2px solid #ccc;
-  width: 0;
-  height: 1em;
-}
-
-.tree li button {
-  border: 2px solid #ccc;
-  padding: .5em .75em;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 5px;
-  color: #ececec;
-  position: relative;
-  top: 2px;
-  background: transparent;
-  font-size: 18px;
-}
-
-.tree li button:hover,
-.tree li button:hover + ul li button {
-  background: transparent;
-  color: #21d392;
-  border: 2px solid #21d392;
-}
-
-.tree li button:hover + ul li::after,
-.tree li button:hover + ul li::before,
-.tree li button:hover + ul::before,
-.tree li button:hover + ul ul::before {
-  border-color: #21d392;
+  font-size: 1.5rem;
 }
 
 #contact {
@@ -836,6 +726,16 @@ nav #links .highlight i {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #5e5e5e;
+}
+
+html {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 650px), (max-height: 650px) {
+  html {
+    font-size: 10px;
+  }
 }
 
 body {
