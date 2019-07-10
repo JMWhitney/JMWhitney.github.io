@@ -520,6 +520,36 @@ nav #links .highlight i {
           animation: moveLine 3s linear infinite;
 }
 
+@-webkit-keyframes pop {
+  0% {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+            transform: translate3d(0px, 0px, 0px);
+    -webkit-box-shadow: 0px 0px 0px black;
+            box-shadow: 0px 0px 0px black;
+  }
+  100% {
+    -webkit-transform: translate3d(-5px, -5px, 0px);
+            transform: translate3d(-5px, -5px, 0px);
+    -webkit-box-shadow: 5px 5px 3px black;
+            box-shadow: 5px 5px 3px black;
+  }
+}
+
+@keyframes pop {
+  0% {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+            transform: translate3d(0px, 0px, 0px);
+    -webkit-box-shadow: 0px 0px 0px black;
+            box-shadow: 0px 0px 0px black;
+  }
+  100% {
+    -webkit-transform: translate3d(-5px, -5px, 0px);
+            transform: translate3d(-5px, -5px, 0px);
+    -webkit-box-shadow: 5px 5px 3px black;
+            box-shadow: 5px 5px 3px black;
+  }
+}
+
 #projects {
   display: block;
   min-height: 60vh;
@@ -549,11 +579,20 @@ nav #links .highlight i {
   padding: 10px;
 }
 
+@media screen and (max-width: 900px) {
+  #projects #projects-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #projects .card {
   padding: 10px;
   border: 2px solid #21d392;
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   margin: 10px;
 }
 
@@ -572,8 +611,11 @@ nav #links .highlight i {
 }
 
 #projects .card:hover {
-  -webkit-box-shadow: 5px 5px 3px black;
-          box-shadow: 5px 5px 3px black;
+  -webkit-animation: pop 0.125s;
+          animation: pop 0.125s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  cursor: pointer;
 }
 
 #skills {
