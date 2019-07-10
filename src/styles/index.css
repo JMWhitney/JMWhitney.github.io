@@ -528,6 +528,7 @@ nav #links .highlight i {
   margin: auto;
   margin-bottom: 15px;
   text-align: center;
+  color: lightgray;
 }
 
 #projects h1 {
@@ -535,6 +536,44 @@ nav #links .highlight i {
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 3px;
   padding: 10px;
+}
+
+#projects #projects-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10px;
+}
+
+#projects .card {
+  padding: 10px;
+  border: 2px solid #21d392;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: 10px;
+}
+
+#projects .card h1 {
+  color: #21d392;
+  font-size: 2rem;
+}
+
+#projects .card h2 {
+  color: #ce2522;
+  font-size: 1.8rem;
+}
+
+#projects .card ul {
+  text-align: left;
+}
+
+#projects .card:hover {
+  -webkit-box-shadow: 5px 5px 3px black;
+          box-shadow: 5px 5px 3px black;
 }
 
 #skills {
