@@ -150,7 +150,6 @@ nav #links .highlight i {
     top: 15px;
     outline: 0;
     padding: 0;
-    cursor: pointer;
     border-bottom: 4px solid #21d392;
     width: 28px;
     transition: border-bottom 1s ease-in-out;
@@ -590,10 +589,11 @@ nav #links .highlight i {
 
 #projects .card {
   padding: 10px;
-  border: 2px solid #21d392;
+  border: 2px solid darkslategray;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  margin: 10px;
+  margin: 15px;
+  max-width: 90%;
 }
 
 #projects .card h1 {

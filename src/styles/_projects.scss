@@ -36,10 +36,11 @@
 
   .card {
     padding: 10px;
-    border: 2px solid $primaryCool;
+    border: 2px solid darkslategray;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    margin: 10px;
+    margin: 15px;
+    max-width: 90%;
 
     h1 {
       color: $primaryCool;

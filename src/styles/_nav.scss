@@ -84,8 +84,9 @@ nav {
 
 // Burger menu button
 $burger--thickness: 4px;
+$width: 28px;
+
 .burger {
-  $width: 28px;
   display: none;
   
   @media screen and (max-width: $break-small), (max-height: $break-small){
@@ -96,7 +97,6 @@ $burger--thickness: 4px;
     top: 15px;
     outline: 0;
     padding: 0;
-    cursor: pointer;
     
     border-bottom: $burger--thickness solid $primaryCool;
     width: $width;
