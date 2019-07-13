@@ -28,6 +28,7 @@
     display: flex;
     flex-direction: row;
     padding: 10px;
+    flex-wrap: wrap;
 
     @media screen and (max-width: $break-med) {
       flex-direction: column;
@@ -41,6 +42,7 @@
     border-bottom-right-radius: 15px;
     margin: 15px;
     max-width: 90%;
+    flex-grow: 1;
 
     h1 {
       color: $primaryCool;
@@ -54,6 +56,7 @@
 
     ul {
       text-align: left;
+      font-size: 1.2rem;
     }
 
     &:hover {

@@ -576,6 +576,8 @@ nav #links .highlight i {
       -ms-flex-direction: row;
           flex-direction: row;
   padding: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media screen and (max-width: 900px) {
@@ -594,6 +596,9 @@ nav #links .highlight i {
   border-bottom-right-radius: 15px;
   margin: 15px;
   max-width: 90%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 #projects .card h1 {
@@ -608,6 +613,7 @@ nav #links .highlight i {
 
 #projects .card ul {
   text-align: left;
+  font-size: 1.2rem;
 }
 
 #projects .card:hover {
@@ -619,19 +625,15 @@ nav #links .highlight i {
 }
 
 #skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   width: 100%;
   background: #191919;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   color: lightgray;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 #skills .skill-divider {
@@ -656,11 +658,11 @@ nav #links .highlight i {
 }
 
 #skills .skill-section {
-  margin-left: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #skills h1 {
-  height: 100%;
   color: #21d392;
   text-align: center;
   font-size: 2.5rem;
@@ -682,7 +684,7 @@ nav #links .highlight i {
 }
 
 #skills ul {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 #contact {
@@ -867,6 +869,7 @@ main {
 
 .content-wrapper {
   width: 80vw;
+  max-width: 1200px;
   margin: auto;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
