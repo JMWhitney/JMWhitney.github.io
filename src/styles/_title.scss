@@ -37,7 +37,7 @@
   margin: auto;
   margin-top: 20vh;
   margin-left: 25vw;
-  margin-bottom: 60vh;
+  margin-bottom: 50vh;
 
   @media screen and (max-width: $break-small), (max-height: $break-small) {
     @include flexCenter(column);

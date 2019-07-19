@@ -9,7 +9,7 @@
 @import "./scrollbar";
 
 html {
-  font-size: 16px;
+  font-size: 15px;
 
   @media screen and (max-width: $break-small), (max-height: $break-small) {
     font-size: 10px;
@@ -47,13 +47,16 @@ main {
 }
 
 .content-wrapper {
+  position: relative;
   width: 80vw;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: auto;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
+  left: $logoSize / 2;
 
   @media screen and (max-width: $break-small), (max-height: $break-small) {
     width: 100vw;
+    left: 0;
   }
 }

@@ -246,7 +246,7 @@ nav #links .highlight i {
   margin: auto;
   margin-top: 20vh;
   margin-left: 25vw;
-  margin-bottom: 60vh;
+  margin-bottom: 50vh;
 }
 
 @media screen and (max-width: 650px), (max-height: 650px) {
@@ -661,7 +661,7 @@ nav #links .highlight i {
   font-size: 2.5rem;
   letter-spacing: 3px;
   padding: 40px;
-  margin: 10px;
+  margin: 0;
   background: #131317;
 }
 
@@ -805,7 +805,7 @@ nav #links .highlight i {
 }
 
 html {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 @media screen and (max-width: 650px), (max-height: 650px) {
@@ -861,16 +861,19 @@ main {
 }
 
 .content-wrapper {
+  position: relative;
   width: 80vw;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: auto;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
+  left: 36px;
 }
 
 @media screen and (max-width: 650px), (max-height: 650px) {
   .content-wrapper {
     width: 100vw;
+    left: 0;
   }
 }
 /*# sourceMappingURL=index.css.map */
